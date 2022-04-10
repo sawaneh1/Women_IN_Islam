@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img from "../assests/test.png";
+import img from "../assests/about.png";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl   navbar  m-10 mt-20">
+    <nav className="bg-gray-100 border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-2xl  shadow-gray-800  navbar  m-10 mt-20">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -97,6 +97,10 @@ const Navbar = () => {
         </div>
         <div className="flex place-items-center items-center ">
           <div className="p-10 w-full  sm:w-4/5">
+            <h1 className="-mt-28 mb-5 font-bold  text-xl">
+              Test your islamic Knowledge...
+            </h1>
+
             <p className="w-full">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
               nesciunt vel, nulla et sapiente molestias illo odit eligendi fuga
