@@ -126,16 +126,16 @@ const Quiz = () => {
     <div>
       <div className="flex  text-white justify-between px-5 mt-5 mb-5 sm:mt-3 sm:mb-2">
         <span className="font-bold text-2xl">UL NISA</span>
-        <span className="font-bold text-xl">Quit quiz</span>
+        <span className="font-bold text-xl cursor-pointer">Quit quiz</span>
       </div>
       <div className="w-full px-4 py-5">
         <div className="flex justify-center relative">
-          <nav className=" text-pink-600  align-middle -top-4 w-4/5  md:w-1/2  lg:w-1/2   absolute content-center place-content-center place-items-center rounded-full px-5 bg-white shadow-md flex justify-between    ">
+          <nav className=" text-pink-600  align-middle -top-4 w-4/5  md:w-1/2  lg:w-1/2   absolute content-center place-content-center place-items-center rounded-full px-5 bg-neutral-900 shadow-md flex justify-between    ">
             <span className="">
               {" "}
               Score: <span className="font-bold text-xl">{score}</span>
             </span>
-            <span className="rounded-full shadow-2xl bg-white px-0.5  text-center  py-2  h-12  w-auto">
+            <span className="rounded-full shadow-2xl  px-0.5  text-center  py-2  h-12  w-auto">
               <span className="font-bold text-xl">10</span> min
             </span>
             <span className="">
@@ -171,7 +171,9 @@ const Quiz = () => {
                                 : ""
                             }
                   ${
-                    checked ? "bg-sky-900 bg-opacity-75 text-white" : "bg-white"
+                    checked
+                      ? "bg-sky-900 bg-opacity-75 text-white"
+                      : "bg-neutral-900"
                   }
                     mt-5 sm:mt-2 relative rounded-lg shadow-md px-5 py-4 cursor-pointer flex focus:outline-none`
                           }
@@ -184,7 +186,7 @@ const Quiz = () => {
                                     <RadioGroup.Label
                                       as="p"
                                       className={`font-medium  ${
-                                        checked ? "text-white" : "text-gray-900"
+                                        checked ? "text-white" : "text-pink-600"
                                       }`}
                                     >
                                       {q.answer}
@@ -233,7 +235,7 @@ const Quiz = () => {
                 next
               </button>
             </div>
-            <div className="bg-white rounded-full w-full h-5 m-auto mt-4">
+            <div className="bg-neutral-900 rounded-full w-full h-5 m-auto mt-4">
               <div
                 className="bg-green-500  h-5 rounded-full "
                 style={{ width: progress + "%" }}

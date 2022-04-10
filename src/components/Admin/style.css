@@ -1,0 +1,16 @@
+.admin {
+  min-height: 100vh;
+  background: linear-gradient(rgb(10, 10, 10), rgb(12, 12, 12));
+}
+.border-style {
+  width: 100%;
+  height: 0.5px;
+  background-color: rgba(36, 32, 32, 0.158);
+}
+.border-styles {
+  width: 0.1px;
+  /* height: 400px; */
+  background-color: rgba(36, 32, 32, 0.089);
+
+  /* background-color: ; */
+}
