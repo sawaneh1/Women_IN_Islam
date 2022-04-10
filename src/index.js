@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Quiz from "./components/Quiz";
 import ScoreBoard from "./components/scoreBoard";
 import Auth from "./components/Auth/Auth";
+import AdminDashboard from "./components/Admin";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Route element={<App />} path="/" />
       <Route element={<Quiz />} path="/quiz" />
       <Route element={<ScoreBoard />} path="/scoreboard" />
+      <Route element={<AdminDashboard />} path="/admin_dashboard" />
       <Route element={<Auth />} path="/login" />
     </Routes>
   </BrowserRouter>,
