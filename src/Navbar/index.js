@@ -1,20 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import img from "../assests/test.png";
+import img from "../assests/about.png";
+import logo from "../assests/test1.svg";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleShowMenu = () => {
+    setShowMenu((prev) => !prev);
+  };
   return (
-    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl   navbar  m-10 mt-20">
+    <nav className="linear text-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-20">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="#" className="flex items-center">
-              <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-pink-500 pl-10">
-                Women In Islam
+            <a href="#" className="flex items-center gap-2  ml-8">
+              <img src={logo} width="80" height="80" alt="" />
+              <span className="self-center text-2xl font-mono font-bold whitespace-nowrap dark:text-pink-50">
+                Ul-NISA
               </span>
             </a>
             <button
               data-collapse-toggle="mobile-menu"
+              onClick={handleShowMenu}
               type="button"
               className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-2"
@@ -22,7 +30,7 @@ const Navbar = () => {
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className="w-6 h-6"
+                className={`${showMenu !== false && "hidden"} w-6 h-6`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +42,7 @@ const Navbar = () => {
                 ></path>
               </svg>
               <svg
-                className="hidden w-6 h-6"
+                className={`${showMenu == false && "hidden"} w-6 h-6`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +54,13 @@ const Navbar = () => {
                 ></path>
               </svg>
             </button>
-            <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
+
+            <div
+              className={`${
+                showMenu == false && "hidden"
+              }  w-full md:block md:w-auto`}
+              id="mobile-menu"
+            >
               <ul className="flex flex-col p-10 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 <li>
                   <a
@@ -97,6 +111,10 @@ const Navbar = () => {
         </div>
         <div className="flex place-items-center items-center ">
           <div className="p-10 w-full  sm:w-4/5">
+            <h1 className=" mb-5 font-bold text-pink-600 sm:-mt-32  text-xl">
+              Test your islamic Knowledge...
+            </h1>
+
             <p className="w-full">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
               nesciunt vel, nulla et sapiente molestias illo odit eligendi fuga

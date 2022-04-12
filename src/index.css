@@ -6,20 +6,28 @@ body {
   margin-top: 0;
   box-sizing: border-box;
   padding: 0;
-  background: #cb356b; /* fallback for old browsers */
+  background: #cb356b;
+  background: linear-gradient(to right, #bd3f32, #cb356b);
+
+  /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #bd3f32,
     #cb356b
   ); /* Chrome 10-25, Safari 5.1-6 */
   /* background: linear-gradient(to right, #000, #cb356b); */
-  background: radial-gradient(#000, #cb356b);
+  /* background: radial-gradient(#000, black); */
+  /* background-color: ; */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.linear {
+  /* background: linear-gradient(to right, #c9493b, #6b0f31); */
+  background: radial-gradient(rgb(1, 2, 20), rgb(0, 0, 0));
 }
 
 .scoreboard {
   /* background-color: red; */
-  min-height: 100vh;
+  min-height: 80vh;
 }
 .navbar {
   min-height: 80vh;
