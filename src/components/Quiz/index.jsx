@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RadioGroup } from "@headlessui/react";
 import { useRoutes, useNavigate } from "react-router-dom";
 import QuizCard from "./QuizCard";
+import logo from "../../assests/test.png";
 
 const questions = [
   {
@@ -74,7 +75,7 @@ const questions = [
 
 const Quiz = () => {
   const naviage = useNavigate();
-  const [count, setCount] = useState(0);
+  const [scoreRate, setScoreRate] = useState(0);
   const [progress, setProgress] = useState(0);
   console.log("progress", progress);
   const [selected, setSelected] = useState(false);
@@ -93,6 +94,7 @@ const Quiz = () => {
   };
 
   const calculateProgress = 100 / questions.length;
+  const calScoreRate = questions.length * 10;
 
   const handleNext = () => {
     console.log(next);
@@ -116,17 +118,50 @@ const Quiz = () => {
     setProgress((prev) => prev + calculateProgress);
     setLeft((prev) => prev - 1);
 
-    setCount((prev) => prev + 1);
     setNext((prev) => prev + 1);
     setSelected(false);
     console.log("this selected whites", selected, selected.isCorrect);
   };
 
+  // useEffect(() => {
+  //   if (secondsCounter == 0) {
+  //     return naviage("/scoreboard");
+  //   }
+  // });
+
+  const [secondsCounter, setSecondsCounter] = useState(60);
+  const [minutesCounter, setminutesCounter] = useState(2);
+  useEffect(() => {
+    if (secondsCounter == 0) setSecondsCounter(60);
+    const secondstimer =
+      secondsCounter > 0 &&
+      setInterval(() => setSecondsCounter(secondsCounter - 1), 1000);
+
+    //  const munitesTimer = munitesTimer > 0 &&
+
+    return () => {
+      clearInterval(secondstimer);
+    };
+  }, [secondsCounter]);
+
+  useEffect(() => {
+    if (minutesCounter == 0) return naviage("/scoreboard");
+    const minutesTimer =
+      minutesCounter > 0 &&
+      setInterval(() => setminutesCounter(minutesCounter - 1), 60000);
+    return () => clearInterval(minutesTimer);
+  }, [minutesCounter]);
+
   return (
     <div>
       <div className="flex  text-white justify-between px-5 mt-5 mb-5 sm:mt-3 sm:mb-2">
-        <span className="font-bold text-2xl">UL NISA</span>
-        <span className="font-bold text-xl cursor-pointer">Quit quiz</span>
+        <span className="font-extrabold gap-2 items-center flex text-3xl text-gray-900">
+          <img src={logo} height="60" width="60" className="rounded-lg" />{" "}
+          <span>Ul-Nisa</span>
+        </span>
+        <span className="font-extrabold   items-center text-3xl text-gray-900 cursor-pointer">
+          End quiz
+        </span>
       </div>
       <div className="w-full px-4 py-5">
         <div className="flex justify-center relative">
@@ -136,7 +171,10 @@ const Quiz = () => {
               Score: <span className="font-bold text-xl">{score}</span>
             </span>
             <span className="rounded-full shadow-2xl  px-0.5  text-center  py-2  h-12  w-auto">
-              <span className="font-bold text-xl">10</span> min
+              <span className="font-bold text-xl">
+                {minutesCounter}:{secondsCounter}
+              </span>{" "}
+              min
             </span>
             <span className="">
               {" "}
@@ -237,7 +275,7 @@ const Quiz = () => {
             </div>
             <div className="bg-neutral-900 rounded-full w-full h-5 m-auto mt-4">
               <div
-                className="bg-green-500  h-5 rounded-full "
+                className="bg-gray-800 h-5 rounded-full "
                 style={{ width: progress + "%" }}
               ></div>
             </div>
@@ -257,6 +295,11 @@ const Quiz = () => {
           </div>
         </div>
       </div>
+      <footer>
+        <h3 className="font-bold text-gray-900 italic  text-xl text-center">
+          &copy; SawanehTech LTD 2022.
+        </h3>
+      </footer>
     </div>
   );
 };
