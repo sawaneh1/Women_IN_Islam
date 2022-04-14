@@ -1,10 +1,23 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import img from "../assests/about.png";
 import logo from "../assests/test1.svg";
+import { updateUser } from "../components/Redux/UserSlice";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
+  const [name, setName] = useState();
+  const [phone, setPhone] = useState();
+  const user = useSelector((state) => state.user);
+  console.log(user);
+
+  const handleUpdate = (e) => {
+    e.preventDefault();
+
+    dispatch(updateUser({ name, phone }));
+  };
 
   const handleShowMenu = () => {
     setShowMenu((prev) => !prev);
@@ -63,13 +76,15 @@ const Navbar = () => {
             >
               <ul className="flex flex-col p-10 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 <li>
-                  <a
-                    href="#"
-                    className="block py-2 pr-4 pl-3 text-white text-lg bg-blue-700 rounded md:bg-transparent md:text-pink-500 md:p-0 dark:text-white"
-                    aria-current="page"
-                  >
-                    Home
-                  </a>
+                  <Link to="/admin_dashboard">
+                    <a
+                      href="#"
+                      className="block py-2 pr-4 pl-3 text-white text-lg bg-blue-700 rounded md:bg-transparent md:text-pink-500 md:p-0 dark:text-white"
+                      aria-current="page"
+                    >
+                      Home
+                    </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -112,7 +127,7 @@ const Navbar = () => {
         <div className="flex place-items-center items-center ">
           <div className="p-10 w-full  sm:w-4/5">
             <h1 className=" mb-5 font-bold text-pink-600 sm:-mt-32  text-xl">
-              Test your islamic Knowledge...
+              Test your islamic Knowledge... {user.name} and | {user.phone}
             </h1>
 
             <p className="w-full">
@@ -125,7 +140,26 @@ const Navbar = () => {
                 Take test
               </button>
             </Link>
+            <div className=" flex gap-10">
+              <input
+                type="text"
+                value={name}
+                placeholder="update name"
+                className="rounded-full p-3 mt-5  text-gray-700"
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                type="text"
+                value={phone}
+                placeholder="update name"
+                className="rounded-full p-3 mt-5  text-gray-700"
+                s
+                onChange={(e) => setPhone(e.target.value)}
+              />
+              <button onClick={handleUpdate}>Update name</button>
+            </div>
           </div>
+
           <div className="hidden  sm:flex">
             <img src={img} alt="" className="md:h-4/5 h-2/3" />
           </div>

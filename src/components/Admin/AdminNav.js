@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import test from "../../assests/test.png";
 import user from "../../assests/user.jpg";
 const AdminNav = () => {
+  const user = useSelector((state) => state.user);
   return (
     <nav class=" border-gray-200 w-full px-2 sm:px-4 py-2.5 h-10 rounded dark:bg-neutral-900-800">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
@@ -40,10 +42,10 @@ const AdminNav = () => {
           >
             <div class="py-3 px-4">
               <span class="block text-sm text-gray-900 dark:text-white">
-                Bonnie Green
+                {user.name}
               </span>
               <span class="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">
-                name@flowbite.com
+                {user.phone}
               </span>
             </div>
             <ul class="py-1" aria-labelledby="dropdown">
