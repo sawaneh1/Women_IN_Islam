@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import img from "../assests/about.png";
-import logo from "../assests/new.jpg";
+import logo from "../assests/test1.svg";
 import { updateUser } from "../components/Redux/UserSlice";
 
 const Navbar = () => {

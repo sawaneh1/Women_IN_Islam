@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { RadioGroup } from "@headlessui/react";
 import { useRoutes, useNavigate } from "react-router-dom";
 import QuizCard from "./QuizCard";
-import logo from "../assests/new.jpg";
+import logo from "../../assests/test.png";
 
 const questions = [
   {
