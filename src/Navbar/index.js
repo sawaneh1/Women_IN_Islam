@@ -23,7 +23,7 @@ const Navbar = () => {
     setShowMenu((prev) => !prev);
   };
   return (
-    <nav className="linear text-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-20">
+    <nav className="linear text-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar   m-5 sm:m-10 mt-17">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -127,7 +127,7 @@ const Navbar = () => {
         <div className="flex place-items-center items-center ">
           <div className="p-10 w-full  sm:w-4/5">
             <h1 className=" mb-5 font-bold text-pink-600 sm:-mt-32  text-xl">
-              Test your islamic Knowledge... {user.name} and | {user.phone}
+              Test your islamic Knowledge...
             </h1>
 
             <p className="w-full">
@@ -140,24 +140,6 @@ const Navbar = () => {
                 Take test
               </button>
             </Link>
-            {/* <div className=" flex gap-10">
-              <input
-                type="text"
-                value={name}
-                placeholder="update name"
-                className="rounded-full p-3 mt-5  text-gray-700"
-                onChange={(e) => setName(e.target.value)}
-              />
-              <input
-                type="text"
-                value={phone}
-                placeholder="update name"
-                className="rounded-full p-3 mt-5  text-gray-700"
-                s
-                onChange={(e) => setPhone(e.target.value)}
-              />
-              <button onClick={handleUpdate}>Update name</button>
-            </div> */}
           </div>
 
           <div className="hidden  sm:flex">
