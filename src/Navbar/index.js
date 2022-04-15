@@ -140,7 +140,7 @@ const Navbar = () => {
                 Take test
               </button>
             </Link>
-            <div className=" flex gap-10">
+            {/* <div className=" flex gap-10">
               <input
                 type="text"
                 value={name}
@@ -157,7 +157,7 @@ const Navbar = () => {
                 onChange={(e) => setPhone(e.target.value)}
               />
               <button onClick={handleUpdate}>Update name</button>
-            </div>
+            </div> */}
           </div>
 
           <div className="hidden  sm:flex">
