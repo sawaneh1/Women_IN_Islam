@@ -154,12 +154,12 @@ const Quiz = () => {
 
   return (
     <div>
-      <div className="flex  text-white justify-between px-5 mt-5 mb-5 sm:mt-3 sm:mb-2">
+      <div className="flex  text-white justify-between px-5 mt-5 mb-3 sm:mt-3 sm:mb-2">
         <span className="font-extrabold gap-2 items-center flex text-lg text-gray-900 ">
           <img src={logo} height="70" width="70" className="rounded-full" />{" "}
           <span>Ul-Nisa</span>
         </span>
-        <div className="flex items-center gap-1 bg-slate-900 rounded-xl  px-3 p-0 text-white">
+        <div className="flex items-center gap-1 bg-red-600 rounded-xl  px-3 p-0 text-gray-300">
           <span className="   items-center   cursor-pointer">end </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +177,7 @@ const Quiz = () => {
           </svg>
         </div>
       </div>
-      <div className="w-full px-4 py-5">
+      <div className="w-full px-4 py-4">
         <div className="flex justify-center relative">
           <nav className=" text-pink-600  align-middle -top-4 w-4/5  md:w-1/2  lg:w-1/2   absolute content-center place-content-center place-items-center rounded-full px-5 bg-neutral-900 shadow-md flex justify-between    ">
             <span className="">
@@ -198,13 +198,13 @@ const Quiz = () => {
         </div>
 
         {/* <QuizCard  questions={questions[0 + count]} /> */}
-        <div className="w-full px-4 py-16">
+        <div className="w-full px-4 py-10">
           <div className="w-full max-w-md mx-auto">
             <RadioGroup value={selected} onChange={setSelected}>
               <RadioGroup.Label className="sr-only">
                 Server size
               </RadioGroup.Label>
-              <div className="space-y-2">
+              <div className="space-y-1">
                 {
                   <div>
                     <h1 className="text-gray-300 font-bold  text-xl text-center">
