@@ -159,9 +159,25 @@ const Quiz = () => {
           <img src={logo} height="60" width="60" className="rounded-lg" />{" "}
           <span>Ul-Nisa</span>
         </span>
-        <span className="font-extrabold   items-center text-3xl text-gray-900 cursor-pointer">
-          End quiz
-        </span>
+        <div className="flex items-center gap-1">
+          <span className="font-extrabold    items-center text-lg text-gray-900 cursor-pointer">
+            End{" "}
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-gray-900"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </div>
       </div>
       <div className="w-full px-4 py-5">
         <div className="flex justify-center relative">

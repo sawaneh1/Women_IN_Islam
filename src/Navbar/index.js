@@ -23,13 +23,13 @@ const Navbar = () => {
     setShowMenu((prev) => !prev);
   };
   return (
-    <nav className="linear text-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar   m-5 sm:m-10 mt-17">
+    <nav className="linear text-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-20">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
             <a href="#" className="flex items-center gap-2  ml-8">
               <img src={logo} width="80" height="80" alt="" />
-              <span className="self-center text-2xl font-mono font-bold whitespace-nowrap dark:text-pink-50">
+              <span className="self-center text-lg font-extrabold  whitespace-nowrap dark:text-pink-50">
                 Ul-NISA
               </span>
             </a>
