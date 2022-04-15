@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./scoreboard.css";
-import logo from "../assests/test1.svg";
+import logo from "../assests/new.jpg";
 
 const ScoreBoard = () => {
   return (
