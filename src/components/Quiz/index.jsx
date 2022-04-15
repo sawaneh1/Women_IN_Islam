@@ -155,11 +155,11 @@ const Quiz = () => {
   return (
     <div>
       <div className="flex  text-white justify-between px-5 mt-5 mb-5 sm:mt-3 sm:mb-2">
-        <span className="font-extrabold gap-2 items-center flex text-lg text-gray-900 p-2">
+        <span className="font-extrabold gap-2 items-center flex text-lg text-gray-900 ">
           <img src={logo} height="70" width="70" className="rounded-full" />{" "}
           <span>Ul-Nisa</span>
         </span>
-        <div className="flex items-center gap-1 bg-slate-900 rounded-full  px-4 p-0 text-white">
+        <div className="flex items-center gap-1 bg-slate-900 rounded-xl  px-3 p-0 text-white">
           <span className="   items-center   cursor-pointer">end </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
