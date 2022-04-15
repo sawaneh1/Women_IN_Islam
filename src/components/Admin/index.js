@@ -6,7 +6,7 @@ import user from "../../assests/user.jpg";
 
 const AdminDashboard = () => {
   return (
-    <div className="admin">
+    <div className="admin overflow-hidden">
       <AdminNav />
       <div className="  border-style" />
       <div className="content h-full c-h flex">

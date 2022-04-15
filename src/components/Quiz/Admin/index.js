@@ -2,7 +2,7 @@ import React from "react";
 
 const AdminDashboard = () => {
   return (
-    <div className="flex  bg-black">
+    <div className="flex admindashbordrd bg-black">
       <nav class="bg-black opacity-0 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-neutral-900-800">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="https://flowbite.com" class="flex items-center">
