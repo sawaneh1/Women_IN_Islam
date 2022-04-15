@@ -2,6 +2,9 @@
   min-height: 100vh;
   min-width: 100%;
 }
+body {
+  background: linear-gradient(rgb(10, 10, 10), rgb(12, 12, 12));
+}
 
 .border-style {
   width: 100%;

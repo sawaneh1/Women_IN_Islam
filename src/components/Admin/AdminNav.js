@@ -1,14 +1,14 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import test from "../../assests/test.png";
-import user from "../../assests/user.jpg";
+import userImg from "../../assests/user.jpg";
 const AdminNav = () => {
   const user = useSelector((state) => state.user);
   return (
     <nav class=" border-gray-200 w-full px-2 sm:px-4 py-2.5 h-10 rounded dark:bg-neutral-900-800">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <div>
-          <a href="https://flowbite.com" class="flex items-center">
+          <a href="#" class="flex items-center">
             <img src={test} class="mr-3 h-6 sm:h-9 rounded-full" alt="test" />
             <span class="self-center text-xl font-semibold whitespace-nowrap  text-white dark:text-white">
               UL_NISA
@@ -24,7 +24,7 @@ const AdminNav = () => {
             data-dropdown-toggle="dropdown"
           >
             <span class="sr-only">Open user menu</span>
-            <img class="w-8 h-8 rounded-full" src={user} alt="user photo" />
+            <img class="w-8 h-8 rounded-full" src={userImg} alt="user photo" />
           </button>
 
           <div
@@ -152,7 +152,7 @@ const AdminNav = () => {
                 href="#"
                 class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Pricing
+                Donations
               </a>
             </li>
             <li>
