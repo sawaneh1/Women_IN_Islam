@@ -14,20 +14,20 @@ const AdminDashboard = () => {
         <div className="  border-styles" />
 
         <div className=" w-full mx-auto   px-10  text-white ">
-          <div className="flex  justify-between  px-32 py-10">
+          <div className="flex  justify-between  sm:px-32 py-10">
             <h2 className="text-lg font-bold">Admin Panel</h2>
-            <div className="flex relative">
-              <span className="best_scorers  font-bold text-lg">
-                best scorers
+            <div className="flex gap-1 items-center relative">
+              <span className="best_scorers  font-bold text-md">
+                best scorers:
               </span>
               <img
                 src={user}
-                class="absolute left-28 h-2 sm:h-9 rounded-full"
+                class="sm:absolute absolute left-28 h-9 sm:h-9 rounded-full"
                 alt="Flowbite Logo"
               />
               <img
                 src={user}
-                class=" h-2 sm:h-9 rounded-full absolute left-32"
+                class=" h-9 sm:h-9 rounded-full sm:absolute left-32"
                 alt="Flowbite Logo"
               />{" "}
               {/* <img
@@ -39,18 +39,18 @@ const AdminDashboard = () => {
           </div>
           <div className="main-content  ">
             <div className="flex justify-between">
-              <div className="flex gap-4">
+              <div className="flex flex-col items-center sm:flex-row sm:gap-4 gap:1">
                 <h4>Total Members</h4>
-                <span className="bg-neutral-900 rounded-lg w-10 h-7 text-center">
+                <span className="bg-neutral-900 mt-2 rounded-lg w-10 h-7 text-center">
                   71
                 </span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-col sm:flex-row items-center gap-2">
                 <h4>filter Users</h4>
                 <input
                   type="search"
                   placeholder="Search"
-                  className="rounded-full bg-transparent text-gray-100 focus:border-blue-900 border-neutral-800 p-1.5 border-2  placeholder:p-2"
+                  className="rounded-full w-40 bg-transparent text-gray-100 focus:border-blue-900 border-neutral-800 p-1.5 border-2  placeholder:p-2"
                 />
               </div>
             </div>

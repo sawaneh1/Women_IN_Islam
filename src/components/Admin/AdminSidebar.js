@@ -1,31 +1,34 @@
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const AdminSidebar = () => {
   const user = useSelector((state) => state.user);
   console.log("user", user);
 
   return (
-    <aside class="w-64 mt-10" aria-label="Sidebar">
+    <aside class="w-64 mt-10 hidden sm:block" aria-label="Sidebar">
       <div class="overflow-y-auto py-4 px-3  rounded dark:bg-gray-800">
         <ul class="space-y-2 text-white">
           <li>
-            <a
-              href="#"
-              class="flex items-center p-2 text-base font-normal text-gray-400 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
-            >
-              <svg
-                class="w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+            <Link to="/set_quiz">
+              <a
+                href="#"
+                class="flex items-center p-2 text-base font-normal text-gray-400 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
               >
-                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-              </svg>
-              <span class="ml-3">Dashboard</span>
-            </a>
+                <svg
+                  class="w-6 h-6 text-gray -400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                  <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                </svg>
+                <span class="ml-3">Set Quiz</span>
+              </a>
+            </Link>
           </li>
           <li>
             <a

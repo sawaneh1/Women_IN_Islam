@@ -9,6 +9,8 @@ import Auth from "./components/Auth/Auth";
 import AdminDashboard from "./components/Admin";
 import { Provider } from "react-redux";
 import store from "./components/Redux/store";
+import SetQuiz from "./components/SetQuiz";
+
 
 ReactDOM.render(
   <Provider store={store}>
@@ -18,6 +20,7 @@ ReactDOM.render(
         <Route element={<Quiz />} path="/quiz" />
         <Route element={<ScoreBoard />} path="/scoreboard" />
         <Route element={<AdminDashboard />} path="/admin_dashboard" />
+        <Route element={<SetQuiz />} path="/set_quiz" />
         <Route element={<Auth />} path="/login" />
       </Routes>
     </BrowserRouter>

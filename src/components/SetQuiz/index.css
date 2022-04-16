@@ -1,0 +1,5 @@
+.bg-setQuiz {
+  background: radial-gradient(rgb(1, 2, 20), rgb(0, 0, 0));
+  overflow-y: hidden;
+  min-height: 100vh;
+}
