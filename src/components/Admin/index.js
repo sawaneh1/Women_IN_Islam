@@ -41,7 +41,7 @@ const AdminDashboard = () => {
             <div className="flex justify-between">
               <div className="flex flex-col items-center sm:flex-row sm:gap-4 gap:1">
                 <h4>Total Members</h4>
-                <span className="bg-neutral-900 mt-2 rounded-lg w-10 h-7 text-center">
+                <span className="bg-neutral-900 sm:mt-1 mt-3 rounded-lg w-10 h-7 text-center">
                   71
                 </span>
               </div>
@@ -55,7 +55,97 @@ const AdminDashboard = () => {
               </div>
             </div>
 
-            <div className="table w-full mt-10">
+            <div className="sm:hidden mt-5">
+              <h2 className="text-lg font-bold">Members Details</h2>
+              <ul className="mt-5">
+                <li className=" shadow-2xl bg-black mt-5 mb-5 text-gray-100 rounded-lg p-3">
+                  <div className="flex ">
+                    <div>
+                      <h4 className="font-bold text-gray-100">Member Name:</h4>
+                      <span className="px-2">Mariama Sawaneh</span>
+                    </div>
+
+                    <div>
+                      <h4 className="font-bold text-gray-100">Member Role:</h4>
+                      <span className="px-2">Vice President</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex p-4 justify-between">
+                      <h4 className="font-bold text-gray-100">Donated:</h4>
+                      <span className="text-green-500 font-bold">D45</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <button className="bg-blue-700 rounded-lg text-white text-center px-3  p-1">
+                      More
+                    </button>
+                  </div>
+                </li>
+                <li className=" mt-5 mb-5 bg-black text-gray-100 rounded-lg p-3">
+                  <div className="flex ">
+                    <div>
+                      <h4 className="font-bold text-gray-100">Member Name:</h4>
+                      <span className="px-2">Mariama Sawaneh</span>
+                    </div>
+
+                    <div>
+                      <h4 className="font-bold text-gray-100">Member Role:</h4>
+                      <span className="px-2">Vice President</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex p-4 justify-between">
+                      <h4 className="font-bold text-gray-100">Donated:</h4>
+                      <span className="text-green-500 font-bold">D45</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <button className="bg-blue-700 rounded-lg text-white text-center px-3  p-1">
+                      More
+                    </button>
+                  </div>
+                </li>
+
+                <li className="b mt-5 mb-5 bg-black text-gray-100 rounded-lg p-3">
+                  <div className="flex ">
+                    <div>
+                      <h4 className="font-bold text-gray-100">Member Name:</h4>
+                      <span className="px-2">Mariama Sawaneh</span>
+                    </div>
+
+                    <div>
+                      <h4 className="font-bold text-gray-100">Member Role:</h4>
+                      <span className="px-2">Vice President</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex p-4 justify-between">
+                      <h4 className="font-bold text-gray-100">Donated:</h4>
+                      <span className="text-green-500 font-bold">D45</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <button className="bg-blue-700 rounded-lg text-white text-center px-3  p-1">
+                      More
+                    </button>
+                  </div>
+                </li>
+                <div className="flex gap-5 mt-5 mb-20">
+                  <span className="cursor-pointer text-neutral-600">
+                    Previous
+                  </span>
+                  <span className="cursor-pointer">1</span>
+                  <span className="bg-neutral-900 px-3">2</span>
+                  <span className="cursor-pointer">3</span>
+                  <span className="cursor-pointer">4</span>
+                  <span className="cursor-pointer">5</span>
+                  <span className="cursor-pointer">Next</span>
+                </div>
+              </ul>
+            </div>
+
+            <div className="sm:table w-full mt-10 hidden">
               <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                   <thead class="text-md text-gray-200 font-extrabold uppercase dark:bg-gray-700 dark:text-gray-400">
