@@ -1,14 +1,19 @@
 import React from "react";
+import logo from "../../assests/logo1.jpg";
 
 const Auth = () => {
   return (
     <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div class="max-w-md w-full space-y-8">
         <div>
+          <span className="text-gray-100 font-bold sm:text-xl">
+            AN Nisa Ul Muslim
+          </span>
+
           <img
-            class="mx-auto h-12 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-            alt="Workflow"
+            class="mx-auto h-16 sm:h-32 w-auto rounded-md mt-3"
+            src={logo}
+            alt="AN Nisa Ul Muslim"
           />
           <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-100">
             Sign in to your account
@@ -85,11 +90,11 @@ const Auth = () => {
           <div>
             <button
               type="submit"
-              class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-900 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                 <svg
-                  class="h-5 w-5 text-pink-500 group-hover:text-indigo-400"
+                  class="h-5 w-5 text-yellow-500 group-hover:text-indigo-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"

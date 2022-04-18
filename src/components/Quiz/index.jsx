@@ -3,6 +3,8 @@ import { RadioGroup } from "@headlessui/react";
 import { useRoutes, useNavigate, Link } from "react-router-dom";
 import QuizCard from "./QuizCard";
 import logo from "../../assests/logo1.jpg";
+import Head from "../../Navbar/Head";
+import Footer from "../Footer";
 
 const questions = [
   {
@@ -151,19 +153,17 @@ const Quiz = () => {
       setInterval(() => setminutesCounter(minutesCounter - 1), 60000);
     return () => clearInterval(minutesTimer);
   }, [minutesCounter]);
+  const [text, setText] = useState(false);
 
   return (
     <div>
       <div className="flex  text-white justify-between px-5 mt-5 mb-3 sm:mt-3 sm:mb-2">
-        <span className="font-extrabold gap-2 items-center flex text-lg text-yellow-500 ">
-          <img src={logo} height="80" width="80" className="rounded-full" />{" "}
-          <span className="text-xl font-bold">Ul-Nisa</span>
-        </span>
-        <div className="flex items-center gap-1 bg-red-700 rounded-full  px-3 p-0 text-gray-300">
+        <Head />
+        <div className="flex items-center gap-1  rounded-md exit_text    text-red-600">
           <Link to="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 "
+              className="h-10 w-10 "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -226,7 +226,7 @@ const Quiz = () => {
                   ${
                     checked
                       ? "bg-sky-900 bg-opacity-75 text-white"
-                      : "bg-neutral-900"
+                      : "bg-neutral-900 test-color"
                   }
                     mt-5 sm:mt-2 relative rounded-lg shadow-md px-5 py-4 cursor-pointer flex focus:outline-none`
                           }
@@ -312,11 +312,7 @@ const Quiz = () => {
           </div>
         </div>
       </div>
-      <footer>
-        <h3 className="font-bold text-gray-200 italic  text-xl text-center">
-          &copy; SawanehTech LTD 2022.
-        </h3>
-      </footer>
+      <Footer />
     </div>
   );
 };

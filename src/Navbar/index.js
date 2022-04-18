@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import img from "../assests/logo1.jpg";
+import Footer from "../components/Footer";
 
 // import logo from "../assests/test1.svg";
-import logo from "../assests/logo1.jpg";
 
 import { updateUser } from "../components/Redux/UserSlice";
+import Head from "./Head";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -26,16 +27,11 @@ const Navbar = () => {
     setShowMenu((prev) => !prev);
   };
   return (
-    <nav className="linear bg-white border-gray-200 px-2 overflow-hidden sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-10">
+    <nav className="linear bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-10">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="#" className="flex items-center gap-1  sm:ml-8">
-              <img src={logo} width="80" height="80" alt="" />
-              <span className="self-center text-lg text-yellow-500  font-extrabold  whitespace-nowrap dark:text-pink-50">
-                Ul-NISA
-              </span>
-            </a>
+            <Head />
             <button
               data-collapse-toggle="mobile-menu"
               onClick={handleShowMenu}
@@ -129,18 +125,18 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col-reverse  sm:flex-row place-items-center items-center ">
           <div className="p-5  w-full  sm:w-4/5">
-            <h1 className=" mb-3 text-center sm:text-left font-bold text-yellow-600 sm:-mt-32  text-xl">
+            <h1 className=" mb-3 text-center sm:text-left sm:text-2xl font-bold text-blue-600 sm:-mt-32  text-xl">
               Test your islamic Knowledge...
             </h1>
 
-            <p className="w-full text-sm header-p">
+            <p className="w-full text-sm  sm:text-lg header-p">
               We offer a range of quizes, rangin from the saying of Allah The
               Most High and His Prophet and Messenger Peace Be Upon Him, and
-              other things with regards
+              other things with related to the Dean.
             </p>
             <div className="flex sm:block justify-center">
               <Link to="/quiz">
-                <button className="bg-red-700 font-bold rounded-lg p-2 text-white w-48 mt-10">
+                <button className="bg-blue-900 font-bold rounded-lg p-2 text-white w-48 mt-10">
                   Take test
                 </button>
               </Link>
