@@ -30,9 +30,9 @@ const Navbar = () => {
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="#" className="flex items-center gap-2  ml-8">
+            <a href="#" className="flex items-center gap-1  sm:ml-8">
               <img src={logo} width="80" height="80" alt="" />
-              <span className="self-center text-lg font-extrabold  whitespace-nowrap dark:text-pink-50">
+              <span className="self-center text-lg text-yellow-500  font-extrabold  whitespace-nowrap dark:text-pink-50">
                 Ul-NISA
               </span>
             </a>
@@ -128,25 +128,27 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex flex-col-reverse  sm:flex-row place-items-center items-center ">
-          <div className="p-10  w-full  sm:w-4/5">
-            <h1 className=" mb-5 font-bold text-pink-600 sm:-mt-32  text-xl">
+          <div className="p-5  w-full  sm:w-4/5">
+            <h1 className=" mb-3 font-bold text-pink-600 sm:-mt-32  text-xl">
               Test your islamic Knowledge...
             </h1>
 
             <p className="w-full">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-              nesciunt vel, nulla et sapiente molestias illo odit eligendi fuga
-              ullam nam architecto similique necessitatibus accusamus in libero
+              We offer a range of quizes, rangin from the saying of Allah The
+              Most High and His Prophet and Messenger Peace Be Upon Him, and
+              other things with regards
             </p>
-            <Link to="/quiz">
-              <button className="bg-pink-500  rounded-lg p-2 text-white w-48 mt-10">
-                Take test
-              </button>
-            </Link>
+            <div className="flex sm:block justify-center">
+              <Link to="/quiz">
+                <button className="bg-pink-500  f rounded-lg p-2 text-white w-48 mt-10">
+                  Take test
+                </button>
+              </Link>
+            </div>
           </div>
 
-          <div className=" mt-5 sm:flex">
-            <img src={img} alt="" className="md:h-4/5 h-2/3" />
+          <div className=" flex justify-start mt-5 sm:flex">
+            <img src={img} alt="" className="md:h-4/5 h-1/4 w-96" />
           </div>
         </div>
       </div>
