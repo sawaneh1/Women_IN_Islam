@@ -12,6 +12,10 @@ body {
   background-color: #f5d020;
   background-image: linear-gradient(330deg, #f5d020 80%, #f53803 74%);
 
+  background-color: #003b64;
+  background-image: linear-gradient(315deg, #fff200 70%, #003b64 70%);
+  font-family: "Merriweather", serif;
+
   /* background-color: #003b64;
   background-image: linear-gradient(315deg, #003b64 0%, #fff200 74%); */
   font-family: "Merriweather", serif;
@@ -28,6 +32,7 @@ body {
 .header-p {
   font-style: oblique;
 }
+
 .linear {
   /* background: linear-gradient(to right, #c9493b, #6b0f31); */
   /* background: radial-gradient(rgb(1, 2, 20), rgba(0, 0, 0, 0.925));
