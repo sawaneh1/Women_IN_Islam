@@ -125,7 +125,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col-reverse  sm:flex-row place-items-center items-center ">
           <div className="p-5  w-full  sm:w-4/5">
-            <h1 className=" mb-3 text-center sm:text-left sm:text-2xl font-bold text-blue-600 sm:-mt-32  text-xl">
+            <h1 className=" mb-2 text-center sm:text-left sm:text-2xl font-bold text-blue-600 sm:-mt-32  text-xl">
               Test your islamic Knowledge...
             </h1>
 
@@ -136,14 +136,14 @@ const Navbar = () => {
             </p>
             <div className="flex sm:block justify-center">
               <Link to="/quiz">
-                <button className="bg-blue-900 font-bold rounded-lg p-2 text-white w-48 mt-10">
+                <button className="bg-blue-900 font-bold rounded-lg p-2 text-white w-48 mt-5 sm:10">
                   Take test
                 </button>
               </Link>
             </div>
           </div>
 
-          <div className=" flex justify-start mt-5 sm:flex">
+          <div className=" flex justify-start mt-3 sm:mt-5 sm:flex">
             <img src={img} alt="" className="md:h-4/5 h-1/4 sm:w-full w-96" />
           </div>
         </div>
