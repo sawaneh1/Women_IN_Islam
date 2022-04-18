@@ -35,9 +35,9 @@ body {
 .name {
   font-weight: 700;
 }
-.test-bg {
+/* .test-bg {
   background-image: linear-gradient(190deg, #003b64 74%, #d6960b 10%);
-}
+} */
 
 @media (max-width: 310px) {
   .name {

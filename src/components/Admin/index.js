@@ -58,7 +58,7 @@ const AdminDashboard = () => {
             <div className="sm:hidden mt-5">
               <h2 className="text-lg font-bold">Members Details</h2>
               <ul className="mt-5">
-                <li className=" shadow-2xl  test-bg mt-5 mb-5 text-gray-100 rounded-lg p-3">
+                <li className=" shadow-2xl bg-black  test-bg mt-5 mb-5 text-gray-100 rounded-lg p-3">
                   <div className="flex ">
                     <div>
                       <h4 className="font-bold text-gray-100">Member Name:</h4>
