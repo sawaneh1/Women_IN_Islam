@@ -130,9 +130,9 @@ const Navbar = () => {
             </h1>
 
             <p className="w-full text-sm  sm:text-lg header-p">
-              We offer a range of quizes, rangin from the saying of Allah The
+              We offer a range of quizes, ranging from the saying of Allah The
               Most High and His Prophet and Messenger Peace Be Upon Him, and
-              other things with related to the Dean.
+              other things related to the Dean.
             </p>
             <div className="flex sm:block justify-center">
               <Link to="/quiz">
