@@ -6,11 +6,18 @@ body {
   margin-top: 0;
   box-sizing: border-box;
   padding: 0;
-  background: #cb356b;
-  background: linear-gradient(to right, #bd3f32, #cb356b);
+  /* background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
+  background-color: #f5d020;
+  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+
+  background-color: #003b64;
+  background-image: linear-gradient(315deg, #003b64 0%, #fff200 74%);
+  /* background: #cb356b; */
+  /* background: linear-gradient(to right, #bd3f32, #cb356b); */
 
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #bd3f32, #cb356b);
+  /* background: -webkit-linear-gradient(to right, #bd3f32, #cb356b); */
   /* background: linear-gradient(to right, #000, #cb356b); */
   /* background: radial-gradient(#000, black); */
   /* background-color: ; */
@@ -18,7 +25,14 @@ body {
 }
 .linear {
   /* background: linear-gradient(to right, #c9493b, #6b0f31); */
-  background: radial-gradient(rgb(1, 2, 20), rgba(0, 0, 0, 0.925));
+  /* background: radial-gradient(rgb(1, 2, 20), rgba(0, 0, 0, 0.925));
+   */
+  background-color: #f6d327;
+  background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);
+  background-color: #f5d020;
+  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+  background-color: #ef5734;
+  background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
 }
 
 .scoreboard {
