@@ -133,14 +133,14 @@ const Navbar = () => {
               Test your islamic Knowledge...
             </h1>
 
-            <p className="w-full">
+            <p className="w-full text-sm header-p">
               We offer a range of quizes, rangin from the saying of Allah The
               Most High and His Prophet and Messenger Peace Be Upon Him, and
               other things with regards
             </p>
             <div className="flex sm:block justify-center">
               <Link to="/quiz">
-                <button className="bg-pink-500  f rounded-lg p-2 text-white w-48 mt-10">
+                <button className="bg-yellow-500  f rounded-lg p-2 text-white w-48 mt-10">
                   Take test
                 </button>
               </Link>

@@ -1,11 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans+Caption:wght@700&display=swap");
 body {
   margin-top: 0;
   box-sizing: border-box;
   padding: 0;
+  font-family: sans-serif, M;
   /* background-color: #fbb034;
   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
   background-color: #f5d020;
@@ -13,7 +14,8 @@ body {
 
   background-color: #003b64;
   background-image: linear-gradient(315deg, #003b64 0%, #fff200 74%);
-  /* background: #cb356b; */
+  font-family: "Merriweather", serif;
+  /* font-weight: 400; */
   /* background: linear-gradient(to right, #bd3f32, #cb356b); */
 
   /* fallback for old browsers */
@@ -22,6 +24,9 @@ body {
   /* background: radial-gradient(#000, black); */
   /* background-color: ; */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header-p {
+  font-style: oblique;
 }
 .linear {
   /* background: linear-gradient(to right, #c9493b, #6b0f31); */
