@@ -2,22 +2,36 @@
   min-height: 100vh;
   min-width: 100%;
   background: linear-gradient(rgb(10, 10, 10), rgb(12, 12, 12));
+  /* background-image: linear-gradient(315deg, #003b64 94%, #feb002 10%); */
+
   overflow: hidden !important;
 }
 /* .admindashbordrd {
   background: linear-gradient(rgb(10, 10, 10), rgb(12, 12, 12));
   height: 100%;
 } */
+@media (max-width: 480px) {
+  .admin {
+    min-height: 100vh;
+    min-width: 100%;
+    /* background: linear-gradient(rgb(10, 10, 10), rgb(12, 12, 12)); */
+    background-image: linear-gradient(315deg, #003b64 94%, #feb002 10%);
+
+    overflow: hidden !important;
+  }
+}
 
 .border-style {
   width: 100%;
   height: 0.5px;
   background-color: rgba(36, 32, 32, 0.158);
+  /* background-color: #feb002; */
 }
 .border-styles {
   width: 0.1px;
   /* height: 400px; */
   background-color: rgba(36, 32, 32, 0.089);
+  /* background-color: #feb002; */
 
   /* background-color: ; */
 }
