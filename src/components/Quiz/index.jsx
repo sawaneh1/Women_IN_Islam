@@ -157,7 +157,7 @@ const Quiz = () => {
 
   return (
     <div>
-      <div className="flex  text-white justify-between px-5 mt-5 mb-3 sm:mt-3 sm:mb-2">
+      <div className="flex  text-white justify-between px-5 mt-1 mb-2 sm:mt-3 sm:mb-2">
         <Head />
         <div className="flex items-center gap-1  rounded-md exit_text    text-red-600">
           <Link to="/">
@@ -285,7 +285,7 @@ const Quiz = () => {
             <div className="flex justify-center ">
               <button
                 onClick={handleNext}
-                className="bg-slate-900 text-center px-10 text-white rounded-lg font-bold "
+                className="bg-slate-900 text-center px-10 p-4 text-white rounded-lg font-bold "
               >
                 next
               </button>
