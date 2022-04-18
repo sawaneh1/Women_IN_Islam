@@ -32,7 +32,15 @@ body {
 .header-p {
   font-style: oblique;
 }
+.name {
+  font-weight: 700;
+}
 
+@media (max-width: 310px) {
+  .name {
+    display: none;
+  }
+}
 .linear {
   /* background: linear-gradient(to right, #c9493b, #6b0f31); */
   /* background: radial-gradient(rgb(1, 2, 20), rgba(0, 0, 0, 0.925));
