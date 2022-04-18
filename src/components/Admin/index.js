@@ -17,7 +17,7 @@ const AdminDashboard = () => {
           <div className="flex  justify-between  sm:px-32 py-10">
             <h2 className="text-lg font-bold">Admin Panel</h2>
             <div className="flex gap-1 items-center relative">
-              <span className="best_scorers text-yellow-600  font-bold text-md">
+              <span className="best_scorers text-yellow-500  font-bold text-md">
                 best scorers:
               </span>
               <img
@@ -132,9 +132,7 @@ const AdminDashboard = () => {
                   </div>
                 </li>
                 <div className="flex gap-5 mt-5 mb-20">
-                  <span className="cursor-pointer text-neutral-600">
-                    Previous
-                  </span>
+                  <span className="cursor-pointer text-gray-500">Previous</span>
                   <span className="cursor-pointer">1</span>
                   <span className="bg-gray-700 px-3">2</span>
                   <span className="cursor-pointer">3</span>
