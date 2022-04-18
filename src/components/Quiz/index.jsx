@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { RadioGroup } from "@headlessui/react";
-import { useRoutes, useNavigate } from "react-router-dom";
+import { useRoutes, useNavigate, Link } from "react-router-dom";
 import QuizCard from "./QuizCard";
-import logo from "../../assests/test.png";
+import logo from "../../assests/logo1.jpg";
 
 const questions = [
   {
@@ -155,31 +155,32 @@ const Quiz = () => {
   return (
     <div>
       <div className="flex  text-white justify-between px-5 mt-5 mb-3 sm:mt-3 sm:mb-2">
-        <span className="font-extrabold gap-2 items-center flex text-lg text-gray-900 ">
-          <img src={logo} height="70" width="70" className="rounded-full" />{" "}
-          <span>Ul-Nisa</span>
+        <span className="font-extrabold gap-2 items-center flex text-lg text-yellow-500 ">
+          <img src={logo} height="80" width="80" className="rounded-full" />{" "}
+          <span className="text-xl font-bold">Ul-Nisa</span>
         </span>
-        <div className="flex items-center gap-1 bg-red-600 rounded-xl  px-3 p-0 text-gray-300">
-          <span className="   items-center   cursor-pointer">end </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 "
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
+        <div className="flex items-center gap-1 bg-red-700 rounded-full  px-3 p-0 text-gray-300">
+          <Link to="/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 "
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </Link>
         </div>
       </div>
       <div className="w-full px-4 py-4">
         <div className="flex justify-center relative">
-          <nav className=" text-pink-600  align-middle -top-4 w-4/5  md:w-1/2  lg:w-1/2   absolute content-center place-content-center place-items-center rounded-full px-5 bg-neutral-900 shadow-md flex justify-between    ">
+          <nav className=" text-gray-200  align-middle -top-4 w-4/5  md:w-1/2  lg:w-1/2   absolute content-center place-content-center place-items-center rounded-full px-5 bg-neutral-900 shadow-md flex justify-between    ">
             <span className="">
               {" "}
               Score: <span className="font-bold text-xl">{score}</span>
@@ -207,7 +208,7 @@ const Quiz = () => {
               <div className="space-y-1">
                 {
                   <div>
-                    <h1 className="text-gray-300 font-bold  text-xl text-center">
+                    <h1 className="text-gray-50 font-extrabold  text-2xl text-center">
                       {questions[0 + next].question}
                     </h1>
                     {questions[0 + next].answers.map((q, i) => (
@@ -238,7 +239,9 @@ const Quiz = () => {
                                     <RadioGroup.Label
                                       as="p"
                                       className={`font-medium  ${
-                                        checked ? "text-white" : "text-pink-600"
+                                        checked
+                                          ? "text-white"
+                                          : "text-yellow-600"
                                       }`}
                                     >
                                       {q.answer}
@@ -289,7 +292,7 @@ const Quiz = () => {
             </div>
             <div className="bg-neutral-900 rounded-full w-full h-5 m-auto mt-4">
               <div
-                className="bg-gray-800 h-5 rounded-full "
+                className="bg-yellow-500 h-5 rounded-full "
                 style={{ width: progress + "%" }}
               ></div>
             </div>
@@ -310,7 +313,7 @@ const Quiz = () => {
         </div>
       </div>
       <footer>
-        <h3 className="font-bold text-gray-900 italic  text-xl text-center">
+        <h3 className="font-bold text-gray-200 italic  text-xl text-center">
           &copy; SawanehTech LTD 2022.
         </h3>
       </footer>

@@ -46,7 +46,7 @@ const ScoreBoard = () => {
       </div>
 
       <footer>
-        <h3 className="font-bold text-gray-900 italic  text-xl text-center">
+        <h3 className="font-bold text-white italic  text-xl text-center">
           &copy; SawanehTech LTD 2022.
         </h3>
       </footer>

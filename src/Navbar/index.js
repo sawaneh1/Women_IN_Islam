@@ -26,7 +26,7 @@ const Navbar = () => {
     setShowMenu((prev) => !prev);
   };
   return (
-    <nav className="linear bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-20">
+    <nav className="linear bg-white border-gray-200 px-2 overflow-hidden sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-10">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -129,7 +129,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col-reverse  sm:flex-row place-items-center items-center ">
           <div className="p-5  w-full  sm:w-4/5">
-            <h1 className=" mb-3 font-bold text-pink-600 sm:-mt-32  text-xl">
+            <h1 className=" mb-3 text-center sm:text-left font-bold text-yellow-600 sm:-mt-32  text-xl">
               Test your islamic Knowledge...
             </h1>
 
@@ -140,7 +140,7 @@ const Navbar = () => {
             </p>
             <div className="flex sm:block justify-center">
               <Link to="/quiz">
-                <button className="bg-yellow-500  f rounded-lg p-2 text-white w-48 mt-10">
+                <button className="bg-red-700 font-bold rounded-lg p-2 text-white w-48 mt-10">
                   Take test
                 </button>
               </Link>
@@ -148,7 +148,7 @@ const Navbar = () => {
           </div>
 
           <div className=" flex justify-start mt-5 sm:flex">
-            <img src={img} alt="" className="md:h-4/5 h-1/4 w-96" />
+            <img src={img} alt="" className="md:h-4/5 h-1/4 sm:w-full w-96" />
           </div>
         </div>
       </div>
