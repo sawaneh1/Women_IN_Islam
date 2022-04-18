@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import test from "../../assests/test.png";
 import userImg from "../../assests/user.jpg";
+import Head from "../../Navbar/Head";
 const AdminNav = () => {
   const user = useSelector((state) => state.user);
   const [show, setShow] = useState(false);
@@ -14,16 +15,7 @@ const AdminNav = () => {
     <nav className=" border-gray-200 w-full px-2 sm:px-4 py-2.5 h-10 rounded dark:bg-neutral-900-800">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <div>
-          <a href="#" className="flex items-center">
-            <img
-              src={test}
-              className="mr-3 h-6 sm:h-9 rounded-full"
-              alt="test"
-            />
-            <span className="self-center text-xl font-semibold whitespace-nowrap  text-white dark:text-white">
-              UL_NISA
-            </span>
-          </a>
+          <Head />
         </div>
         <div className="flex  md:order-2">
           <button

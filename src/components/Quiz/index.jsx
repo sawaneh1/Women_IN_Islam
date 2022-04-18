@@ -292,7 +292,7 @@ const Quiz = () => {
             </div>
             <div className="bg-neutral-900 rounded-full w-full h-5 m-auto mt-4">
               <div
-                className="bg-yellow-500 h-5 rounded-full "
+                className="bg-gray-200 h-5 rounded-full "
                 style={{ width: progress + "%" }}
               ></div>
             </div>

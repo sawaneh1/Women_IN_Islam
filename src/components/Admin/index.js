@@ -17,7 +17,7 @@ const AdminDashboard = () => {
           <div className="flex  justify-between  sm:px-32 py-10">
             <h2 className="text-lg font-bold">Admin Panel</h2>
             <div className="flex gap-1 items-center relative">
-              <span className="best_scorers  font-bold text-md">
+              <span className="best_scorers text-yellow-600  font-bold text-md">
                 best scorers:
               </span>
               <img
@@ -41,7 +41,7 @@ const AdminDashboard = () => {
             <div className="flex justify-between">
               <div className="flex flex-col items-center sm:flex-row sm:gap-4 gap:1">
                 <h4>Total Members</h4>
-                <span className="bg-neutral-900 sm:mt-1 mt-3 rounded-lg w-10 h-7 text-center">
+                <span className="bg-yellow-700 sm:mt-1 mt-3 rounded-lg w-10 h-7 text-center">
                   71
                 </span>
               </div>
@@ -58,7 +58,7 @@ const AdminDashboard = () => {
             <div className="sm:hidden mt-5">
               <h2 className="text-lg font-bold">Members Details</h2>
               <ul className="mt-5">
-                <li className=" shadow-2xl bg-black mt-5 mb-5 text-gray-100 rounded-lg p-3">
+                <li className=" shadow-2xl  test-bg mt-5 mb-5 text-gray-100 rounded-lg p-3">
                   <div className="flex ">
                     <div>
                       <h4 className="font-bold text-gray-100">Member Name:</h4>
@@ -82,7 +82,7 @@ const AdminDashboard = () => {
                     </button>
                   </div>
                 </li>
-                <li className=" mt-5 mb-5 bg-black text-gray-100 rounded-lg p-3">
+                <li className=" mt-5 mb-5 bg-black test-bg  text-gray-100 rounded-lg p-3">
                   <div className="flex ">
                     <div>
                       <h4 className="font-bold text-gray-100">Member Name:</h4>
@@ -107,7 +107,7 @@ const AdminDashboard = () => {
                   </div>
                 </li>
 
-                <li className="b mt-5 mb-5 bg-black text-gray-100 rounded-lg p-3">
+                <li className="b mt-5 mb-5 bg-black test-bg  text-gray-100 rounded-lg p-3">
                   <div className="flex ">
                     <div>
                       <h4 className="font-bold text-gray-100">Member Name:</h4>
@@ -136,7 +136,7 @@ const AdminDashboard = () => {
                     Previous
                   </span>
                   <span className="cursor-pointer">1</span>
-                  <span className="bg-neutral-900 px-3">2</span>
+                  <span className="bg-gray-700 px-3">2</span>
                   <span className="cursor-pointer">3</span>
                   <span className="cursor-pointer">4</span>
                   <span className="cursor-pointer">5</span>
