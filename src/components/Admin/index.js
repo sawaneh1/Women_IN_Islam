@@ -62,12 +62,12 @@ const AdminDashboard = () => {
                   <div className="flex ">
                     <div>
                       <h4 className="font-bold text-gray-100">Member Name:</h4>
-                      <span className="px-2">Mariama Sawaneh</span>
+                      <span className="px-2 text-sm">Mariama Sawaneh</span>
                     </div>
 
                     <div>
                       <h4 className="font-bold text-gray-100">Member Role:</h4>
-                      <span className="px-2">Vice President</span>
+                      <span className="px-2 text-sm">Vice President</span>
                     </div>
                   </div>
                   <div>
@@ -86,12 +86,12 @@ const AdminDashboard = () => {
                   <div className="flex ">
                     <div>
                       <h4 className="font-bold text-gray-100">Member Name:</h4>
-                      <span className="px-2">Mariama Sawaneh</span>
+                      <span className="px-2 text-sm">Mariama Sawaneh</span>
                     </div>
 
                     <div>
                       <h4 className="font-bold text-gray-100">Member Role:</h4>
-                      <span className="px-2">Vice President</span>
+                      <span className="px-2 text-sm">Vice President</span>
                     </div>
                   </div>
                   <div>
@@ -111,12 +111,12 @@ const AdminDashboard = () => {
                   <div className="flex ">
                     <div>
                       <h4 className="font-bold text-gray-100">Member Name:</h4>
-                      <span className="px-2">Mariama Sawaneh</span>
+                      <span className="px-2 text-sm">Mariama Sawaneh</span>
                     </div>
 
                     <div>
                       <h4 className="font-bold text-gray-100">Member Role:</h4>
-                      <span className="px-2">Vice President</span>
+                      <span className="px-2 text-sm">Vice President</span>
                     </div>
                   </div>
                   <div>
