@@ -27,7 +27,7 @@ body {
   /* background: linear-gradient(to right, #c9493b, #6b0f31); */
   /* background: radial-gradient(rgb(1, 2, 20), rgba(0, 0, 0, 0.925));
    */
-  background-color: #f6d327;
+  /* background-color: #f6d327;
   background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);
   background-color: #f5d020;
   background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
@@ -36,7 +36,7 @@ body {
   background-color: #003b64;
   background-image: linear-gradient(315deg, #003b64 0%, #fff200 74%);
   background-color: #fdb813;
-  background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 74%);
+  background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 74%); */
 }
 
 .scoreboard {

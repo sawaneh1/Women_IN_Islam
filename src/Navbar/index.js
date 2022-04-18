@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import img from "../assests/about.png";
-import logo from "../assests/test1.svg";
+import img from "../assests/logo1.jpg";
+
+// import logo from "../assests/test1.svg";
+import logo from "../assests/logo1.jpg";
+
 import { updateUser } from "../components/Redux/UserSlice";
 
 const Navbar = () => {
@@ -23,7 +26,7 @@ const Navbar = () => {
     setShowMenu((prev) => !prev);
   };
   return (
-    <nav className="linear text-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-20">
+    <nav className="linear bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-20">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -79,7 +82,7 @@ const Navbar = () => {
                   <Link to="/admin_dashboard">
                     <a
                       href="#"
-                      className="block py-2 pr-4 pl-3 text-white text-lg bg-blue-700 rounded md:bg-transparent md:text-pink-500 md:p-0 dark:text-white"
+                      className="block py-2 pr-4 pl-3 text-white text-lg bg-blue-700 rounded md:bg-transparent md:text-yellow-600 md:p-0 dark:text-white"
                       aria-current="page"
                     >
                       Home
@@ -89,7 +92,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 pr-4 pl-3 text-gray-700 text-lg border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 pr-4 pl-3 text-gray-700 text-lg border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     About
                   </a>
@@ -124,8 +127,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="flex place-items-center items-center ">
-          <div className="p-10 w-full  sm:w-4/5">
+        <div className="flex flex-col-reverse  sm:flex-row place-items-center items-center ">
+          <div className="p-10  w-full  sm:w-4/5">
             <h1 className=" mb-5 font-bold text-pink-600 sm:-mt-32  text-xl">
               Test your islamic Knowledge...
             </h1>
@@ -142,7 +145,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden  sm:flex">
+          <div className=" mt-5 sm:flex">
             <img src={img} alt="" className="md:h-4/5 h-2/3" />
           </div>
         </div>
