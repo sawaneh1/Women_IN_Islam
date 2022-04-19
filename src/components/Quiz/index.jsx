@@ -5,6 +5,8 @@ import QuizCard from "./QuizCard";
 import logo from "../../assests/logo1.jpg";
 import Head from "../../Navbar/Head";
 import Footer from "../Footer";
+import { useDispatch, useSelector } from "react-redux";
+import { updateUser } from "../Redux/UserSlice";
 
 const questions = [
   {
@@ -79,19 +81,22 @@ const Quiz = () => {
   const naviage = useNavigate();
   const [scoreRate, setScoreRate] = useState(0);
   const [progress, setProgress] = useState(0);
-  console.log("progress", progress);
+  // console.log("progress", progress);
   const [selected, setSelected] = useState(false);
   const [score, setScore] = useState(0);
   const [left, setLeft] = useState(questions.length);
 
   const [next, setNext] = useState(0);
+  const user = useSelector((state) => state.user);
+  const dispatch = useDispatch();
+
   const handleAnswer = (e, answer) => {
     if (e.target) {
       // e.target.style.backgroundColor = 'red'
       e.target.className = "bg-blue-500";
       if (e.target) {
       }
-      console.log("class");
+      // console.log("class");
     }
   };
 
@@ -100,21 +105,22 @@ const Quiz = () => {
 
   const handleNext = () => {
     console.log(next);
-    console.log("left", left);
+    // console.log("left", left);
 
     if (questions.length == next + 1) {
       setScore((prev) => prev + 10);
       setProgress((prev) => prev + calculateProgress);
 
       setTimeout(() => {
-        return naviage("/scoreboard");
+        dispatch(updateUser({ ...user, score }));
+
+        naviage("/scoreboard");
       }, 1000);
 
       return;
     }
 
     if (selected.isCorrect == true) {
-      console.log("loo");
       setScore((prev) => prev + 10);
     }
     setProgress((prev) => prev + calculateProgress);
@@ -122,7 +128,7 @@ const Quiz = () => {
 
     setNext((prev) => prev + 1);
     setSelected(false);
-    console.log("this selected whites", selected, selected.isCorrect);
+    // console.log("this selected whites", selected, selected.isCorrect);
   };
 
   // useEffect(() => {
@@ -147,7 +153,11 @@ const Quiz = () => {
   }, [secondsCounter]);
 
   useEffect(() => {
-    if (minutesCounter == 0) return naviage("/scoreboard");
+    if (minutesCounter == 0) {
+      dispatch(updateUser({ ...user, score }));
+
+      naviage("/scoreboard");
+    }
     const minutesTimer =
       minutesCounter > 0 &&
       setInterval(() => setminutesCounter(minutesCounter - 1), 60000);
@@ -155,9 +165,11 @@ const Quiz = () => {
   }, [minutesCounter]);
   const [text, setText] = useState(false);
 
+  console.log("my user", user);
+
   return (
     <div>
-      <div className="flex  text-white justify-between px-5 mt-1 mb-2 sm:mt-3 sm:mb-2">
+      <div className="flex  text-white justify-between px-5 mt-3 mb-5 sm:mt-3 sm:mb-2">
         <Head />
         <div className="flex items-center gap-1  rounded-md exit_text    text-red-600">
           <Link to="/">

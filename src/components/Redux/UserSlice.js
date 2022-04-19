@@ -5,12 +5,14 @@ export const UserSlice = createSlice({
   initialState: {
     name: "Sawaneh",
     phone: 3810745,
+    score: 0,
   },
 
   reducers: {
     updateUser: (state, action) => {
       state.name = action.payload.name;
       state.phone = action.payload.phone;
+      state.score = action.payload.score;
     },
   },
 });

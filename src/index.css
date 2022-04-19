@@ -10,10 +10,10 @@ body {
   /* background-color: #fbb034;
   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
   background-color: #f5d020;
-  background-image: linear-gradient(330deg, #f5d020 80%, #f53803 74%);
+  /* background-image: linear-gradient(330deg, #f5d020 80%, #f53803 74%); */
 
   background-color: #003b64;
-  background-image: linear-gradient(315deg, #003b64 70%, #feb002 70%);
+  /* background-image: linear-gradient(315deg, #003b64 70%, #feb002 70%); */
   font-family: "Merriweather", serif;
 
   /* background-color: #003b64;
@@ -37,6 +37,12 @@ body {
 }
 .test-bg {
   background-image: linear-gradient(-190deg, #06304e 70%, #d6960b 100%);
+}
+.header-text {
+  color: black;
+}
+.btn {
+  background: #f5d020;
 }
 
 @media (max-width: 310px) {

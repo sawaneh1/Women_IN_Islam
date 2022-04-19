@@ -125,21 +125,30 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col-reverse  sm:flex-row place-items-center items-center ">
           <div className="p-5  w-full  sm:w-4/5">
-            <h1 className=" mb-2 text-center sm:text-left sm:text-2xl font-bold text-blue-600 sm:-mt-32  text-xl">
-              Test your islamic Knowledge...
+            <h1 className=" mb-2 w-full sm:text-2xl header-text font-bold text-blue-600 sm:-mt-32  text-lg">
+              Test your Knowledge...
             </h1>
 
-            <p className="w-full text-sm  sm:text-lg header-p">
+            <p className="w-full text-sm  sm:text-lg header-p mt-5">
               We offer a range of quizes, ranging from the saying of Allah The
               Most High and His Prophet and Messenger Peace Be Upon Him, and
               other things related to the Dean.
             </p>
-            <div className="flex sm:block justify-center">
-              <Link to="/quiz">
-                <button className="bg-blue-900 font-bold rounded-lg p-2 text-white w-48 mt-5 sm:10">
-                  Take test
-                </button>
-              </Link>
+            <div className="flex flex-row gap-4 sm:flex  mt-5">
+              <div>
+                <Link to="/quiz">
+                  <button className="bg-blue-900 btn font-bold border-2 rounded-lg px-6 py-2.5 text-gray-200 sm:w-48 mt-5 sm:10">
+                    Take test
+                  </button>
+                </Link>
+              </div>
+              <div>
+                <Link to="/quiz">
+                  <button className=" border-2 border-blue-900  font-bold rounded-lg px-5 py-2 text-black sm:w-48 mt-5 sm:10">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
