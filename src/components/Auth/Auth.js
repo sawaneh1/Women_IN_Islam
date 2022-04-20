@@ -3,18 +3,9 @@ import logo from "../../assests/logo1.jpg";
 
 const Auth = () => {
   return (
-    <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="min-h-full login flex  items-center justify-center place-items-center  ">
       <div class="max-w-md w-full space-y-8">
         <div>
-          <span className="text-gray-100 font-bold sm:text-xl">
-            AN Nisa Ul Muslim
-          </span>
-
-          <img
-            class="mx-auto h-16 sm:h-32 w-auto rounded-md mt-3"
-            src={logo}
-            alt="AN Nisa Ul Muslim"
-          />
           <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-100">
             Sign in to your account
           </h2>
@@ -70,7 +61,7 @@ const Auth = () => {
                 type="checkbox"
                 class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
               />
-              <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+              <label for="remember-me" class="ml-2 block text-sm text-gray-200">
                 {" "}
                 Remember me{" "}
               </label>

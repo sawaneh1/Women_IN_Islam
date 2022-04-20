@@ -27,7 +27,7 @@ const Navbar = () => {
     setShowMenu((prev) => !prev);
   };
   return (
-    <nav className="linear bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-3xl shadow-xl  shadow-gray-100  navbar  m-5 sm:m-10 mt-10">
+    <nav className="linear text-gray-100 ">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -36,7 +36,7 @@ const Navbar = () => {
               data-collapse-toggle="mobile-menu"
               onClick={handleShowMenu}
               type="button"
-              className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 ml-3 text-sm text-gray-100 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-2"
               aria-expanded="false"
             >
@@ -73,22 +73,22 @@ const Navbar = () => {
               }  w-full md:block md:w-auto`}
               id="mobile-menu"
             >
-              <ul className="flex flex-col p-10 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+              <ul className="flex flex-col p-10 mt-4 md:flex-row md:space-x-8  md:text-sm md:font-medium">
                 <li>
                   <Link to="/admin_dashboard">
-                    <a
+                    <ah
                       href="#"
-                      className="block py-2 pr-4 pl-3 text-white text-lg bg-blue-700 rounded md:bg-transparent md:text-yellow-600 md:p-0 dark:text-white"
+                      className="block py-2 pr-4 pl-3 text-white text-lg hover:text-yellow-500  rounded  md:p-0 dark:text-white"
                       aria-current="page"
                     >
                       Home
-                    </a>
+                    </ah>
                   </Link>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="block py-2 pr-4 pl-3 text-gray-700 text-lg border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 pr-4 pl-3  text-lg border-b border-gray-800 hover:text-yellow-500  md:border-0  md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     About
                   </a>
@@ -96,64 +96,60 @@ const Navbar = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b text-lg border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 pr-4 pl-3  border-b text-lg border-gray-800 hover:text-yellow-500  md:border-0  md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
-                    Contact
+                    Blog
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b text-lg border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 pr-4 pl-3  border-b text-lg border-gray-800 hover:text-yellow-500  md:border-0  md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
-                    Tests
+                    Quiz
                   </a>
                 </li>
                 <li>
-                  <Link to="/login">
-                    <a
-                      href="#"
-                      className="block py-2 pr-4 pl-3 text-gray-700 text-lg hover:text-pink-500 md:hover:text-pink-500 md:border-0  md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-pink-700 dark:hover:text-pink-500 md:dark:hover:bg-white"
-                    >
-                      Login
-                    </a>
-                  </Link>
+                  <a
+                    href="#"
+                    className="block py-2 pr-4 pl-3  text-lg hover:text-yellow-500  md:border-0  md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-pink-700 dark:hover:text-pink-500 md:dark:hover:bg-white"
+                  >
+                    Contact
+                  </a>
                 </li>
+
+                <div className=" gap-2 flex flex-col md:hidden mt-10">
+                  <div>
+                    <button className="bg-yellow-500 w-full py-4 rounded-lg px-5  ">
+                      Get Started
+                    </button>
+                  </div>
+                  <div className="py-2  w-full">
+                    <Link to="/login">
+                      <button className="border-2 py-2 border-gray-100 w-full rounded-md text-white">
+                        <span className="py-2 hover:text-yellow-500">
+                          Sign In
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </ul>
             </div>
-          </div>
-        </div>
-        <div className="flex flex-col-reverse  sm:flex-row place-items-center items-center ">
-          <div className="p-5  w-full  sm:w-4/5">
-            <h1 className=" mb-2 w-full sm:text-2xl header-text font-bold text-blue-600 sm:-mt-32  text-lg">
-              Test your Knowledge...
-            </h1>
-
-            <p className="w-full text-sm  sm:text-lg header-p mt-5">
-              We offer a range of quizes, ranging from the saying of Allah The
-              Most High and His Prophet and Messenger Peace Be Upon Him, and
-              other things related to the Dean.
-            </p>
-            <div className="flex flex-row gap-4 sm:flex  mt-5">
-              <div>
-                <Link to="/quiz">
-                  <button className="bg-blue-900 btn font-bold border-2 rounded-lg px-6 py-2.5 text-gray-200 sm:w-48 mt-5 sm:10">
-                    Take test
-                  </button>
+            <div className=" gap-3 hidden md:flex">
+              <div className="py-2">
+                <Link to="/login">
+                  <span className="py-2 hover:text-yellow-500">Sign In</span>
                 </Link>
               </div>
+              <div className="py-2">|</div>
+
               <div>
-                <Link to="/quiz">
-                  <button className=" border-2 border-blue-900  font-bold rounded-lg px-5 py-2 text-black sm:w-48 mt-5 sm:10">
-                    Learn More
-                  </button>
-                </Link>
+                <button className="bg-yellow-500 rounded-lg px-5 py-2 ">
+                  Get Started
+                </button>
               </div>
             </div>
-          </div>
-
-          <div className=" flex justify-start mt-3 sm:mt-5 sm:flex">
-            <img src={img} alt="" className="md:h-4/5 h-1/4 sm:w-full w-96" />
           </div>
         </div>
       </div>
