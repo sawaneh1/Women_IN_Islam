@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import img from "../assests/logo1.jpg";
 import Footer from "../components/Footer";
+import Home from "../components/Home";
 
 // import logo from "../assests/test1.svg";
 
@@ -153,6 +154,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <Home />
     </nav>
   );
 };
