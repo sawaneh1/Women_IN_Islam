@@ -13,7 +13,7 @@ function App() {
     <div className="app">
       <div className="divider">
         <Navbar />
-        <Home />
+        {/* <Home /> */}
         <About />
       </div>
       {/* <h1>test</h1> */}

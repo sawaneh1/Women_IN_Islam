@@ -34,6 +34,9 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 }
+
+@media (min-width: 980px) {
+}
 .custom-shape-divider-bottom-1650484785 {
   position: absolute;
   bottom: 0;
@@ -55,7 +58,7 @@ body {
   fill: #ffffff;
 }
 .home {
-  min-height: 82vh;
+  min-height: 100vh;
   background-color: #2b2631;
 }
 
@@ -78,9 +81,30 @@ body {
     display: none;
   }
 }
+.custom-shape-divider-bottom-1650495082 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1650495082 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1650495082 .shape-fill {
+  fill: #ffffff;
+}
 
 .linear {
   background-color: #2b2631;
+  min-height: 100vh;
 
   /* background: linear-gradient(to right, #c9493b, #6b0f31); */
   /* background: radial-gradient(rgb(1, 2, 20), rgba(0, 0, 0, 0.925));
@@ -101,6 +125,6 @@ body {
   /* background-color: red; */
   min-height: 80vh;
 }
-.navbar {
+/* .navbar {
   min-height: 80vh;
-}
+} */
