@@ -27,7 +27,7 @@ const Navbar = () => {
     setShowMenu((prev) => !prev);
   };
   return (
-    <nav className="linear text-gray-100 ">
+    <nav className="linear text-gray-100 relative ">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
