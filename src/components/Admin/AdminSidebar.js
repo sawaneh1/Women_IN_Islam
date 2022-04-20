@@ -8,17 +8,17 @@ const AdminSidebar = () => {
   console.log("user", user);
 
   return (
-    <aside class="w-64 mt-10 hidden sm:block" aria-label="Sidebar">
+    <aside class="w-64 mt-20 hidden sm:block" aria-label="Sidebar">
       <div class="overflow-y-auto py-4 px-3  rounded dark:bg-gray-800">
         <ul class="space-y-2 text-white">
           <li>
             <Link to="/set_quiz">
               <a
                 href="#"
-                class="flex items-center p-2 text-base font-normal text-gray-400 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
+                class="flex items-center p-2 text-base font-normal text-gray-200 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
               >
                 <svg
-                  class="w-6 h-6 text-gray -400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  class="w-6 h-6 text-gray -400 transition duration-75 dark:text-gray-200 group-hover:text-gray-900 dark:group-hover:text-white"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -33,10 +33,10 @@ const AdminSidebar = () => {
           <li>
             <a
               href="#"
-              class="flex items-center p-2 text-base font-normal text-gray-400 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-neutral-800-700"
+              class="flex items-center p-2 text-base font-normal text-gray-200 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-neutral-800-700"
             >
               <svg
-                class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-400 dark:group-hover:text-white"
+                class="flex-shrink-0 w-6 h-6 text-gray-200 transition duration-75 dark:text-gray-200 group-hover:text-gray-200 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,10 +52,10 @@ const AdminSidebar = () => {
           <li>
             <a
               href="#"
-              class="flex items-center p-2 text-base font-normal text-gray-400 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
+              class="flex items-center p-2 text-base font-normal text-gray-200 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
             >
               <svg
-                class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                class="flex-shrink-0 w-6 h-6 text-gray-200 transition duration-75 dark:text-gray-200 group-hover:text-gray-900 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,10 +72,10 @@ const AdminSidebar = () => {
           <li>
             <a
               href="#"
-              class="flex items-center p-2 text-base font-normal text-gray-400 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
+              class="flex items-center p-2 text-base font-normal text-gray-200 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
             >
               <svg
-                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                class="flex-shrink-0 w-6 h-6 text-gray-200 transition duration-75 dark:text-gray-200 group-hover:text-gray-900 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -92,10 +92,10 @@ const AdminSidebar = () => {
           <li>
             <a
               href="#"
-              class="flex items-center p-2 text-base font-normal text-gray-400 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
+              class="flex items-center p-2 text-base font-normal text-gray-200 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
             >
               <svg
-                class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                class="flex-shrink-0 w-6 h-6 text-gray-200 transition duration-75 dark:text-gray-200 group-hover:text-gray-900 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ const AdminSidebar = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span class="flex-1 ml-3 whitespace-nowrap text-gray-400">
+              <span class="flex-1 ml-3 whitespace-nowrap text-gray-200">
                 {user.phone}
               </span>
             </a>
@@ -114,10 +114,10 @@ const AdminSidebar = () => {
           <li>
             <a
               href="#"
-              class="flex items-center p-2 text-base font-normal text-gray-400 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
+              class="flex items-center p-2 text-base font-normal text-gray-200 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
             >
               <svg
-                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                class="flex-shrink-0 w-6 h-6 text-gray-200 transition duration-75 dark:text-gray-200 group-hover:text-gray-900 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,10 +134,10 @@ const AdminSidebar = () => {
           <li>
             <a
               href="#"
-              class="flex items-center p-2 text-base font-normal text-gray-400 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
+              class="flex items-center p-2 text-base font-normal text-gray-200 rounded-lg dark:text-white hover:bg-neutral-900 dark:hover:bg-gray-700"
             >
               <svg
-                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                class="flex-shrink-0 w-6 h-6 text-gray-200 transition duration-75 dark:text-gray-200 group-hover:text-gray-900 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"

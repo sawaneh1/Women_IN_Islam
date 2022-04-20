@@ -13,7 +13,7 @@ const AdminDashboard = () => {
         <AdminSidebar className="h-full" />
         <div className="  border-styles" />
 
-        <div className=" w-full mx-auto   px-10  text-white ">
+        <div className=" w-full mx-auto mt-10  px-10  text-white ">
           <div className="flex  justify-between  sm:px-32 py-10">
             <h2 className="text-lg font-bold">Admin Panel</h2>
             <div className="flex gap-1 items-center relative">
@@ -50,7 +50,7 @@ const AdminDashboard = () => {
                 <input
                   type="search"
                   placeholder="Search"
-                  className="rounded-full w-40 bg-transparent text-gray-100 focus:border-blue-900 border-neutral-800 p-1.5 border-2  placeholder:p-2"
+                  className="rounded-full  w-40 bg-white text-gray-800 focus:border-blue-900 border-neutral-800 p-1.5 border-2  placeholder:p-2"
                 />
               </div>
             </div>

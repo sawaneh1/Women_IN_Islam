@@ -16,11 +16,21 @@ const ScoreBoard = () => {
           <Head />
         </Link>
 
-        <Link to="/" className="mt-2">
+        {/* <Link to="/" className="mt-5">
           <span className="font-extrabold  bg-yellow-600  rounded-xl p-2  items-center text-lg text-gray-100 cursor-pointer">
             Home
           </span>
-        </Link>
+         */}
+      </div>
+      <div>
+        <p className="text-gray-100 text-center ">
+          <Link to="/">
+            Go back...{" "}
+            <span className="bg-yellow-700 rounded-lg text-white  px-3 py-2">
+              Home
+            </span>
+          </Link>
+        </p>
       </div>
 
       <div className="  grid  place-items-center   scoreboard">
@@ -49,8 +59,6 @@ const ScoreBoard = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };
