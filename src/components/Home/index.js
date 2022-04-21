@@ -2,22 +2,22 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="flex  home flex-col items-center h-full place-items-center place-content-center justify-items-center m-auto">
-      <p className="header-text text-4xl  sm:text-6xl sm:px-44   font-bold text-white text-center ">
+    <div className="flex  home flex-col items-center h-full place-items-center place-content-center justify-items-center m-auto sm:-mt-20 -mt-20">
+      <p className="header-text text-5xl  sm:text-6xl sm:px-44   font-bold text-white text-center ">
         A group of <span className="text-yellow-500"> aspiring</span> sisters
         aiming to <span className="text-yellow-500">help </span> others in{" "}
         <span className="text-yellow-500"> Islam</span>
       </p>
-      <p className="text-gray-100  px-5 text-center">
+      <p className="text-gray-100  px-5 text-center mt-5 text-sm">
         Be part of the the blessing and be rewarded In Sha Allah
       </p>
 
-      <div className="flex gap-5 mx-5 ">
-        <button className="bg-yellow-500 text-gray-800 mt-10 rounded-lg px-7 py-3">
+      <div className="flex gap-5 mx-5 mt-2 ">
+        <button className="bg-yellow-500 text-gray-800 mt-10  hover:border-2  hover:bg-transparent hover:border-yellow-500 hover:text-gray-300  rounded-lg px-7 py-3">
           Learn More
         </button>
 
-        <button className="border-white border-2 text-gray-100 mt-10 rounded-lg px-7 py-3">
+        <button className="border-white  border-2 text-gray-100 mt-10 hover:border-yellow-500 hover:text-gray-200 rounded-lg px-7 py-3">
           Donate Now
         </button>
       </div>
