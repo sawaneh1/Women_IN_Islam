@@ -11,7 +11,18 @@ const Home = () => {
       <p className="text-gray-100  px-5 text-center mt-5 text-sm">
         Be part of the the blessing and be rewarded In Sha Allah
       </p>
-
+      <div className="mx-10 -my-4 absolute top-44 left-10">
+        <div className="border-2  justify-center border-yellow-500 w-2 h-2 rounded-full flex items-center  bg-yellow-500"></div>
+      </div>
+      <div className="mx-10 -my-4 absolute top-60 right-20">
+        <div className="border-2  justify-center border-gray-100 w-4 h-4 rounded-full flex items-center  bg-gray-100"></div>
+      </div>
+      <div className="mx-10 -my-4 absolute bottom-44 left-60">
+        <div className="border-2  justify-center border-gray-100 w-2 h-2 rounded-full flex items-center  bg-gray-100"></div>
+      </div>
+      <div className="mx-10  mt-10 absolute top-96 right-20">
+        <div className="border-2  justify-center border-yellow-500 w-2 h-2 rounded-full flex items-center  bg-yellow-500"></div>
+      </div>
       <div className="flex gap-5 mx-5 mt-2 ">
         <button className="bg-yellow-500 text-gray-800 mt-10  hover:border-2  hover:bg-transparent hover:border-yellow-500 hover:text-gray-300  rounded-lg px-7 py-3">
           Learn More
