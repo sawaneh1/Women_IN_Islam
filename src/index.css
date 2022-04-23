@@ -76,6 +76,15 @@ body {
   background: #f5d020;
 }
 
+.circler-color {
+  background-color: #2b2631;
+  border-color: #2b2631;
+}
+/* .img-about img {
+  height: 400px;
+  width: 900px;
+} */
+
 @media (max-width: 310px) {
   .name {
     display: none;
