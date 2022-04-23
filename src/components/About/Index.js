@@ -8,6 +8,9 @@ import b from "../../assests/b.svg";
 import c from "../../assests/c.svg";
 import d from "../../assests/d.svg";
 import e from "../../assests/e.svg";
+import f from "../../assests/f.svg";
+import g from "../../assests/g.svg";
+import h from "../../assests/h.svg";
 
 const About = () => {
   return (
@@ -33,7 +36,7 @@ const About = () => {
           <div className="flex sm:px-20 px-5">
             <div className="flex gap-2 items-center mt-5">
               <div>
-                <img src={c} className="rounded-full" />
+                <img src={h} className="rounded-full" />
               </div>
               <p className="text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
