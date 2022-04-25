@@ -18,7 +18,7 @@ const About = () => {
       <h1 className="text-center text-5xl text-gray-900 font-bold mt-10 px-5 mb-5 ">
         About Us
       </h1>
-      <h3 className="text-3xl font-bold text-yellow-500 sm:px-20 px-5 lg:px-28">
+      <h3 className="md:text-3xl  text-xlfont-bold text-yellow-500 sm:px-20 px-5 lg:px-28">
         Our Story
       </h3>
 
@@ -85,7 +85,7 @@ const About = () => {
       <div className="our-mission flex flex-col-reverse sm:flex-row justify-center sm:px-20 py-5">
         <div className="py-5">
           <div className="flex justify-between">
-            <h3 className="font-bold text-2xl px-10 text-yellow-500 ">
+            <h3 className="font-bold text-lg px-10 text-yellow-500 ">
               Our Mission
             </h3>
             <div className="mx-20 -my-4">
