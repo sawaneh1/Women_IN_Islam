@@ -14,10 +14,10 @@ const Home = () => {
       <div className="mx-10 -my-4 absolute sm:top-44 top-32 left-16">
         <div className="border-2  justify-center border-yellow-500 w-2 h-2 rounded-full flex items-center  bg-yellow-500"></div>
       </div>
-      <div className="mx-10 -my-4 absolute top-20 right-20">
-        <div className="border-2  justify-center border-gray-100 w-4 h-4 rounded-full flex items-center  bg-gray-100"></div>
+      <div className="mx-10  absolute sm:top-40 top-48 right-24">
+        <div className="border-2  justify-center border-gray-100 sm:w-4 sm:h-4 w-3 h-3 rounded-full flex items-center  bg-gray-100"></div>
       </div>
-      <div className="mx-10 -my-4 absolute sm:bottom-44 sm:left-60 bottom-44 left-1">
+      <div className="mx-10 -my-4 absolute sm:bottom-44 sm:left-60 bottom-56 left-10">
         <div className="border-2  justify-center border-gray-100 w-2 h-2 rounded-full flex items-center  bg-gray-100"></div>
       </div>
       <div className="mx-10  mt-10 absolute sm:top-96 sm:right-10 bottom-10 right-10">
