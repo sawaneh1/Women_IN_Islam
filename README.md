@@ -1,4 +1,3 @@
 # Quiz App for Women In Islam Association
 
-I am building this app to help the above organisation to easily conducts their weakly quiz effectively and efficiently.
-For this App to work, you need to connect it the backend which has the repo here ...
+This is a app for the above charitable organisation to easily conduct thier charititable works. This app will help them easily recieve donations from donors, easy access for anyone that which to join the noble association to join. And it will also help them conduct thier weekily quizes effiecntly and easily.
