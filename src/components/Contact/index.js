@@ -8,7 +8,7 @@ const Contact = () => {
         <section className="text-gray-600 body-font  relative">
           <div className="container px-5 py-2  mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
-              <h1 className="sm:text-2xl mt-5 prose text-4xl  title-font mb-4 text-gray-500 font-bold">
+              <h1 className="sm:text-2xl mt-5 prose text-3xl  title-font mb-4 text-gray-500 font-bold">
                 We are here to help
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-xl ">
@@ -17,7 +17,7 @@ const Contact = () => {
             </div>
             <div className="lg:w-2/3 md:w-2/3 mx-auto ">
               <div className="flex flex-wrap -m-2">
-                <div className="p-2 w-1/2">
+                <div className="p-2 md:w-1/2 w-full">
                   <div className="relative">
                     <label htmlFor="name" className="leading-7  text-gray-600">
                       Name
@@ -30,7 +30,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                <div className="p-2 w-1/2">
+                <div className="p-2 md:w-1/2 w-full">
                   <div className="relative">
                     <label
                       htmlFor="email"
