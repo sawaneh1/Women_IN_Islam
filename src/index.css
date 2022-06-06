@@ -30,9 +30,8 @@ body {
   /* background-color: ; */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.width{
-  width: 40rem;
-}
+
+
 #activities img{
 width: 310px;
 height: 250px;
@@ -44,6 +43,9 @@ height: 250px;
 }
 
 @media (min-width: 980px) {
+  .width{
+    width: 40rem;
+  }
 }
 .custom-shape-divider-bottom-1650484785 {
   position: absolute;

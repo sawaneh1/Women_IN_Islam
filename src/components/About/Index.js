@@ -95,7 +95,7 @@ const About = () => {
               <div className="border-2  justify-center circler-color border-yellow-500 w-4 h-4 rounded-full flex items-center  bg-yellow-500"></div>
             </div>
           </div>
-          <p className="px-10 mt-10 sm:width">
+          <p className="px-10 mt-10 width">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
             facere fuga perferendis blanditiis esse velit cupiditate voluptatem
             unde eligendi cum nam a ipsam minima eveniet harum in excepturi,
@@ -137,7 +137,7 @@ const About = () => {
               <div className="border-2  justify-center circler-color border-yellow-500 w-4 h-4 rounded-full flex items-center  bg-yellow-500"></div>
             </div>
           </div>
-          <p className="px-10 mt-10 sm:width">
+          <p className="px-10 mt-10 width">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
             facere fuga perferendis blanditiis esse velit cupiditate voluptatem
             unde eligendi cum nam a ipsam minima eveniet harum in excepturi,
