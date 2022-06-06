@@ -1,8 +1,8 @@
 import React from "react";
 import img from "../../assests/logo1.jpg";
-import img1 from "../../assests/img1.jpg";
-import img2 from "../../assests/img2.jpg";
-import img3 from "../../assests/img3.jpg";
+// import img1 from "../../assests/img1.jpg";
+// import img2 from "../../assests/img2.jpg";
+// import img3 from "../../assests/img3.jpg";
 import a from "../../assests/a.svg";
 import b from "../../assests/b.svg";
 import c from "../../assests/c.svg";
@@ -11,6 +11,9 @@ import e from "../../assests/e.svg";
 import f from "../../assests/f.svg";
 import g from "../../assests/g.svg";
 import h from "../../assests/h.svg";
+import img1 from "../../assests/image1.jpg";
+import img2 from "../../assests/image2.jpg";
+import img3 from "../../assests/image3.jpg";
 
 const About = () => {
   return (
@@ -82,17 +85,17 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className="our-mission flex flex-col-reverse sm:flex-row justify-center sm:px-20 py-5">
+      <div className="our-mission flex flex-col-reverse sm:flex-row justify-center sm:px-20 py-5 sm:mt-10">
         <div className="py-5">
           <div className="flex justify-between">
-            <h3 className="font-bold text-lg px-10 text-yellow-500 ">
+            <h3 className="font-bold text-xl px-10 text-yellow-500 ">
               Our Mission
             </h3>
             <div className="mx-20 -my-4">
               <div className="border-2  justify-center circler-color border-yellow-500 w-4 h-4 rounded-full flex items-center  bg-yellow-500"></div>
             </div>
           </div>
-          <p className="px-10 mt-10">
+          <p className="px-10 mt-10 sm:width">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
             facere fuga perferendis blanditiis esse velit cupiditate voluptatem
             unde eligendi cum nam a ipsam minima eveniet harum in excepturi,
@@ -116,8 +119,54 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div className="img-about">
-          <img src={d} width="1200" height="350" alt="" />
+        <div className="img-about sm:block hidden">
+          <img src={img2} width="350" height="200" alt="" />
+        </div>
+        <div className="img-about sm:hidden">
+          <img src={img2} className="w-full px-5 h-80" alt="" />
+        </div>
+      </div>
+
+      <div className="our-mission flex flex-col-reverse sm:flex-row-reverse  justify-center sm:px-20 sm:mt-10 ">
+        <div className="py-5">
+          <div className="flex justify-between">
+            <h3 className="font-bold text-xl px-10 text-yellow-500 ">
+              Our Vision
+            </h3>
+            <div className="mx-20 -my-4">
+              <div className="border-2  justify-center circler-color border-yellow-500 w-4 h-4 rounded-full flex items-center  bg-yellow-500"></div>
+            </div>
+          </div>
+          <p className="px-10 mt-10 sm:width">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            facere fuga perferendis blanditiis esse velit cupiditate voluptatem
+            unde eligendi cum nam a ipsam minima eveniet harum in excepturi,
+            dolorum deleniti?
+          </p>
+
+          <div className="px-10 mt-5">
+            <ul className="flex gap-2 ">
+              <li>
+                <h4 className="text-xl font-bold">95%</h4>
+                <span className="text-sm">Lorem, ipsum.</span>
+              </li>
+              <li>
+                <h4 className="text-xl font-bold">95%</h4>
+                <span className="text-sm">Lorem, ipsum.</span>
+              </li>{" "}
+              <li>
+                <h4 className="text-xl font-bold">95%</h4>
+                <span className="text-sm">Lorem, ipsum.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="img-about sm:block hidden">
+          <img src={img2} width="350" height="200" alt="" />
+        </div>
+        <div className="img-about sm:hidden">
+          <img src={img2} className="w-full px-5 h-80" alt="" />
         </div>
       </div>
     </div>
