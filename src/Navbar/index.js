@@ -28,7 +28,7 @@ const Navbar = () => {
     setShowMenu((prev) => !prev);
   };
   return (
-    <nav className="linear text-gray-100 relative sm:-mt-3">
+    <nav className=" ">
       <div>
         <div>
           <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -77,18 +77,18 @@ const Navbar = () => {
               <ul className="flex flex-col p-10 mt-4 md:flex-row md:space-x-8  md:text-sm md:font-medium">
                 <li>
                   <Link to="/admin_dashboard">
-                    <ah
+                    <a
                       href="#"
                       className="block py-2 pr-4 pl-3 text-white text-lg hover:text-yellow-500  rounded  md:p-0 dark:text-white"
                       aria-current="page"
                     >
                       Home
-                    </ah>
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/#about"
                     className="block py-2 pr-4 pl-3  text-lg border-b border-gray-800 hover:text-yellow-500  md:border-0  md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     About
@@ -104,7 +104,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/quiz"
                     className="block py-2 pr-4 pl-3  border-b text-lg border-gray-800 hover:text-yellow-500  md:border-0  md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Quiz
@@ -112,8 +112,8 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="block py-2 pr-4 pl-3  text-lg hover:text-yellow-500  md:border-0  md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-pink-700 dark:hover:text-pink-500 md:dark:hover:bg-white"
+                    href="/#contact"
+                    className="block py-2 pr-4 pl-3  text-lg border-b border-gray-800 hover:text-yellow-500  md:border-0  md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Contact
                   </a>
@@ -154,7 +154,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Home />
     </nav>
   );
 };

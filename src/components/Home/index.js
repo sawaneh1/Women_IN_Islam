@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -24,13 +25,19 @@ const Home = () => {
         <div className="border-2  justify-center border-yellow-500 w-2 h-2 rounded-full flex items-center  bg-yellow-500"></div>
       </div>
       <div className="flex gap-5 mx-5 mt-2 ">
-        <button className="bg-yellow-500 text-gray-800 mt-10  hover:border-2  hover:bg-transparent hover:border-yellow-500 hover:text-gray-300  rounded-lg px-7 py-3">
-          Learn More
-        </button>
-
-        <button className="border-white  border-2 text-gray-100 mt-10 hover:border-yellow-500 hover:text-gray-200 rounded-lg px-7 py-3">
-          Donate Now
-        </button>
+        <a href="/#about">
+          <button
+            type="button"
+            className="bg-yellow-500 text-gray-800 mt-10  hover:border-2  hover:bg-transparent hover:border-yellow-500 hover:text-gray-300  rounded-lg px-7 py-3"
+          >
+            Learn More
+          </button>
+        </a>
+        <Link to={"/be_member"}>
+          <button className="border-white  border-2 text-gray-100 mt-10 hover:border-yellow-500 hover:text-gray-200 rounded-lg px-7 py-3">
+            Be a Member
+          </button>
+        </Link>
       </div>
       <div class="custom-shape-divider-bottom-1650495082">
         {" "}

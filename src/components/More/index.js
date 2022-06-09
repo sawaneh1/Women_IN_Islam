@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const More = () => {
   return (
@@ -13,9 +14,11 @@ const More = () => {
         </p>
 
         <div className="flex justify-center mb-4 ">
-          <button className="rounded-full px-5 py-2 bg-yellow-500">
-            BE A MEMBER
-          </button>
+          <Link to={"/be_member"}>
+            <button className="rounded-full px-5 py-2 bg-yellow-500">
+              BE A MEMBER
+            </button>
+          </Link>
         </div>
       </div>
     </div>

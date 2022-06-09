@@ -71,7 +71,13 @@ height: 250px;
   min-height: 100vh;
   background-color: #2b2631;
 }
+.bg-dark{
+  background-color: #2b2631;
+  min-height:100vh ;
+  overflow: hidden !important;
 
+
+}
 .header-p {
   font-style: oblique;
 }

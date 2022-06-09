@@ -8,6 +8,7 @@ import About from "./components/About/Index";
 import Activities from "./components/Activites";
 import Contact from "./components/Contact";
 import More from "./components/More";
+import Header from "./Header";
 
 function App() {
   const [selected, setSelected] = useState();
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="app">
       <div className="divider">
-        <Navbar />
+        <Header />
         {/* <Home /> */}
         <About />
         <Activities />

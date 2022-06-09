@@ -168,7 +168,7 @@ const Quiz = () => {
   console.log("my user", user);
 
   return (
-    <div>
+    <div className="bg-dark">
       <div className="flex  text-white justify-between px-5 mt-3 mb-5 sm:mt-3 sm:mb-2">
         <Head />
         <div className="flex items-center gap-1  rounded-md exit_text    text-red-600">
@@ -195,7 +195,7 @@ const Quiz = () => {
           <nav className=" text-gray-200  align-middle -top-4 w-4/5  md:w-1/2  lg:w-1/2   absolute content-center place-content-center place-items-center rounded-full px-5 bg-neutral-900 shadow-md flex justify-between    ">
             <span className="">
               {" "}
-              Score: <span className="font-bold text-xl">{score}</span>
+              Score: dd <span className="font-bold text-xl">{score}</span>
             </span>
             <span className="rounded-full shadow-2xl  px-0.5  text-center  py-2  h-12  w-auto">
               <span className="font-bold text-xl">
