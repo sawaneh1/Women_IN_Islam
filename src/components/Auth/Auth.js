@@ -3,7 +3,7 @@ import logo from "../../assests/logo1.jpg";
 
 const Auth = () => {
   return (
-    <div class="min-h-full login flex  items-center justify-center place-items-center  ">
+    <div class="min-h-full bg-dark login flex  items-center justify-center place-items-center  ">
       <div class="max-w-md w-full space-y-8">
         <div>
           <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-100">

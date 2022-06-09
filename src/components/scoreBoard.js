@@ -10,7 +10,7 @@ const ScoreBoard = () => {
   const user = useSelector((state) => state.user);
   console.log("user", user);
   return (
-    <div>
+    <div className="bg-dark">
       <div className="flex  text-white justify-between px-5 mt-5 mb-5 sm:mt-3 sm:mb-2">
         <Link to="/">
           <Head />
