@@ -76,7 +76,7 @@ const Navbar = () => {
             >
               <ul className="flex flex-col p-10 mt-4 md:flex-row md:space-x-8  md:text-sm md:font-medium">
                 <li>
-                  <Link to="/admin_dashboard">
+                  <Link to="/">
                     <a
                       href="#"
                       className="block py-2 pr-4 pl-3 text-white text-lg hover:text-yellow-500  rounded  md:p-0 dark:text-white"
