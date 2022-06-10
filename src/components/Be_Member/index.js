@@ -10,8 +10,14 @@ import {
 import Navbar from "../../Navbar";
 
 const Be_Member = () => {
+  const back = useLocation();
+  console.log("back", back);
   const [step, setStep] = useState(0);
+  const [calStep, setCalStep] = useState(0);
+  const totalStep = 2;
+  const stepsToadd = 100 / (totalStep + 1);
   const navigate = useNavigate();
+  // router.back()
 
   const RenderStep = () => {
     switch (step) {
@@ -101,7 +107,7 @@ const Be_Member = () => {
                     id="reason"
                     name="resaon"
                     placeholder="Please tell us why you wish to be part of this noble assocaition"
-                    className="w-full  bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-40 text-base outline-none  py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full  bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-40 text-base outline-none  py-1 px-3 resize-none leading-6 transition-colors duration-200  text-gray-800 ease-in-out"
                   ></textarea>
                 </div>
               </div>
@@ -114,14 +120,16 @@ const Be_Member = () => {
     }
   };
   const hanldeNext = () => {
-    if (step === 2) return navigate("/");
+    console.log(calStep);
+    if (step === totalStep) return;
+    setCalStep((prev) => prev + stepsToadd);
     setStep((prev) => prev + 1);
   };
   return (
     <div className="linear text-gray-100 relative ">
       <div
-        className="bg-gray-200 h-0.5 rounded-full "
-        style={{ width: 70 + "%" }}
+        className="bg-gray-200 h-1.5 rounded-full "
+        style={{ width: calStep + "%" }}
       ></div>
       <Navbar />
       <div className="lg:w-2/3 md:w-2/3 mx-auto px-10 items-center">
