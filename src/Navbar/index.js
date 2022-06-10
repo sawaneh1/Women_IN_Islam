@@ -122,7 +122,7 @@ const Navbar = () => {
                 <div className=" gap-2 flex flex-col md:hidden mt-10">
                   <div>
                     <button className="bg-yellow-500 w-full py-4 rounded-lg px-5  ">
-                      Get Started
+                      Donate
                     </button>
                   </div>
                   <div className="py-2  w-full">
@@ -147,7 +147,7 @@ const Navbar = () => {
 
               <div>
                 <button className="bg-yellow-500 rounded-lg px-5 py-2 ">
-                  Get Started
+                  Donate
                 </button>
               </div>
             </div>
