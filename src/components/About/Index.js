@@ -14,6 +14,7 @@ import h from "../../assests/h.svg";
 import img1 from "../../assests/image1.jpg";
 import img2 from "../../assests/image2.jpg";
 import img3 from "../../assests/image3.jpg";
+import Be_member_modal from "../../utils/Modal/Modal";
 
 const About = () => {
   return (
