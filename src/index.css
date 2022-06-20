@@ -159,3 +159,10 @@ height: 250px;
 /* .navbar {
   min-height: 80vh;
 } */
+
+/* be a member */
+
+:checked{
+  color: red;
+}
+
