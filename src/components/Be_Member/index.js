@@ -185,7 +185,7 @@ const Be_Member = () => {
                       for="default-checkbox"
                       class="ml-2 text-sm font-medium text-gray-200 dark:text-gray-300"
                     >
-                      Male.
+                      Male
                     </label>
                   </div>
                   <div class="flex items-center mb-4">
@@ -199,7 +199,7 @@ const Be_Member = () => {
                       for="default-checkbox"
                       class="ml-2 text-sm font-medium text-gray-200 dark:text-gray-300"
                     >
-                      Female.
+                      Female
                     </label>
                   </div>
                 </div>
